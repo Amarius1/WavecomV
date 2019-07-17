@@ -64,6 +64,33 @@
             box-shadow: box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.20) !important;
             transition: all 0.3s;
         }
+        @media only screen and (max-width: 768px) {
+            [boof][card] {
+
+               display: block !important;
+                width: 100% !important;
+
+            }
+            [boof2]
+            {
+                width: 120%;
+                margin-left: -20%;
+                margin-right: -20%;
+            }
+            [faf]
+            {
+                text-align: center !important;
+            }
+            [title]
+            {
+                text-align: center !important;
+            }
+            [mariotte]
+            {
+                font-size: 56px;
+                font-weight: 300;
+            }
+        }
     </style>
 </head>
 
@@ -84,12 +111,12 @@
         <div data-aos="fade-right" style="display: inline-block; vertical-align: middle"><img src="logo.png" width="220px"></div>
         <div title style="display: inline-block; vertical-align: middle">
 
-            <H1 data-aos="fade-right">Meet Wavecom <span accent>!</span></H1>
-            <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: left;">Fast</p>
-            <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: left;">Semantic</p>
-            <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: left;">Themable</p>
-            <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: left;">Modern</p>
-            <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: left;">Responsive</p>
+            <H1 mariotte data-aos="fade-right">Meet Wavecom <span accent>!</span></H1>
+            <p faf data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: left;">Fast</p>
+            <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: center;">Semantic</p>
+            <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: center;">Themable</p>
+            <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: center;">Modern</p>
+            <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: center;">Responsive</p>
 
         </div>
 
@@ -105,9 +132,9 @@
             <a btn class="accent outlined filled large">Download</a><a btn class="outlined large">Github</a>
             <br><br><br>
 
-            <img class="rounded" src="start.png"><Br><Br><Br><br><br><br><br>
+            <img boof2 class="rounded" src="start.png"><Br><Br><Br><br><br><br><br>
 
-            <span data-aos="fade-right" card depth-0>
+            <span boof data-aos="fade-right" card depth-0>
                 <img src="speed.png" width="100px" style="border-radius: 100%">
                 <br>
                 <H4>Fast</H4>
@@ -115,7 +142,7 @@
                 <article style="color: rgba(1,1,1,0.8); font-size: 17px;">Wavecom is a light CSS and HTML framework intended to be as easy and as fast to use for large and small projects.</article>
                 <a btn icon class="large accent">offline_bolt</a>
             </span>
-            <span data-aos="fade-down" card>
+            <span boof data-aos="fade-down" card>
                 <img src="semantic.png" width="100px" style="border-radius: 100%">
                 <br>
                 <H4>Semantic</H4>
@@ -125,7 +152,7 @@
                 <a btn icon class="large accent">face</a>
 
             </span>
-            <span data-aos="fade-left" card>
+            <span boof data-aos="fade-left" card>
                 <img src="md.png" width="100px" style="border-radius: 100%">
                 <br>
                 <H4>Material</H4>
