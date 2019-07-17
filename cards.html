@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proteus</title>
+    <!--down of a brave new world-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="icon.png">
+
+    <link href="wavecom.css" type="text/css" rel="stylesheet">
+
+
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+    <style>
+        [card].demo {
+            min-width: 24% !important;
+            min-height: 100px;
+            width: 260px;
+            height: auto;
+        }
+
+        body {
+            background-image: linear-gradient(to right top, #dd7feb, #ff7fc2, #ff919d, #ffac87, #ffc885, #ffd096, #ffd7a7, #ffdfb8, #ffddd0, #ffe1e7, #f4e8f1, #eeeeee);
+
+        }
+    </style>
+</head>
+
+<body class="center">
+
+
+
+
+
+    <span card class="demo">
+        <H5>Card</H5>
+        <article>This is a card that contains absolutely nothing of importance.</article>
+    </span>
+
+    <span card class="demo">
+        <img src="bkg.png" width=100%>
+        <H5>Media</H5>
+        <article>This card contains an image.</article>
+    </span>
+
+
+    <span card class="demo">
+        <img src="bkg.png">
+
+        <H5>Media</H5>
+        <article>This one also has actions!</article>
+        <span actions>
+            <a btn>Button</a>
+            <a btn>Button</a>
+        </span>
+    </span>
+
+
+    <span card class="demo">
+        <img src="bkg2.png">
+
+        <H6>Media</H6>
+        <article>This one also has actions!</article>
+        <span actions>
+            <a btn class="accent raised">Button</a>
+            <a btn>Button</a>
+            <a btn icon class="right">favorite_border</a>
+        </span>
+    </span>
+
+    <span card class="demo">
+        <img src="bkg3.png">
+
+        <H6>Media</H6>
+        <article>This boi expands!</article>
+        <span actions>
+            <a accordion icon class="right ripple">expand_more</a>
+            <div content class="divider">
+                <p strong>Tonight's shows</p>
+                <a btn class="chip">5:30PM</a><a btn class="chip accent">6:30PM</a><a btn class="chip">7:30PM</a>
+                <br><br><br>
+                <div break></div>
+            </div>
+        </span>
+       
+
+    </span>
+    
+      <span card class="demo">
+        <img src="bkg2.png">
+
+        <H6>Media</H6>
+        <article>This boi expands!</article><br>
+        <span actions class="divider">
+            <a btn icon class="right">calendar_today</a>
+            <a accordion btn class="ripple accent">Expand</a>
+            <div content class="divider">
+                <p>This just expanded</p>
+            </div>
+        </span>
+       
+
+    </span>
+    
+    <span card class="demo">
+        <img src="bkg4.png">
+        <span actions>
+            <label>Dunes</label>
+            <a btn icon class="right">arrow_forward</a>
+        </span>
+    </span>
+    
+    
+    <span card class="demo">
+        <label>Mesa</label>
+        <img src="bkg4.png">
+    </span>
+    
+    
+    
+
+
+
+    <!--scripts-->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="wavecom.js"></script>
+    <script>
+        $("i[action='delete']").click(function() {
+            console.log('clicked');
+            $(this).parent().remove();
+        });
+    </script>
+    <script>
+    $(document).ready(function(){
+        $("[accordion][btn]:contains('Expand')").click(function(){
+            $(this).text($(this).text() == 'Expand' ? 'Collapse' : 'Expand');
+        });
+    });
+</script>
+
+
+</body>
+
+</html>

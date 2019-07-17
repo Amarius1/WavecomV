@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proteus</title>
+    <!--down of a brave new world-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="icon.png">
+
+    <link href="proteus.css" type="text/css" rel="stylesheet">
+
+
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+    <style>
+
+    </style>
+</head>
+
+<body style="background-color: rgba(235,235,235,0.1); overflow-x: hidden;">
+
+    <section bar class="flat fixed">
+        <a btn icon id="drawer" class="large">menu</a>
+        <p>Forms</p>
+
+        <span actions>
+            <a href="https://material.io/design/components/navigation-drawer.html" btn class="raised accent">Resources</a>
+        </span>
+    </section>
+    <section class="container">
+        <br><br>
+        <H4>Switches</H4>
+        <p>Switches toggle the state of a single setting on or off. They are the preferred way to adjust settings on mobile.
+        </p>
+        <Br>
+        <section class="container">
+
+            <span class="switch">
+                <input type="checkbox" id="switch1" checked>
+                <label for="switch1" class="thumb">Normal</label>
+            </span>
+            <br>
+            <span class="switch">
+                <input type="checkbox" id="switch2" checked>
+                <label for="switch2" class="thumb contained">Contained</label>
+            </span>
+
+        </section>
+
+        <H4>Checkboxes</H4>
+        <p>Checkboxes allow the user to select one or more items from a set. Checkboxes can be used to turn an option on or off.
+        </p>
+        <Br>
+        <section class="container">
+
+            <input type='checkbox' class='checkbox'>Normal
+
+            <br>
+
+            <input type='checkbox' class='checkbox indeterminate'>Indeterminate
+
+        </section>
+        <br>
+        <H4>Radio Buttons</H4>
+        <p>
+            Radio buttons allow the user to select one option from a set. Use radio buttons when the user needs to see all available options. If available options can be collapsed, consider using a dropdown menu because it uses less space.
+        </p>
+        <Br>
+        <section class="container">
+
+            <span class="radio">
+                <input id="1" type="radio" name="g" checked>
+                <label for="1">Option 1</label>
+            </span>
+            <br>
+            <span class="radio">
+                <input id="2" type="radio" name="g">
+                <label for="2">Option 2</label>
+            </span>
+        </section>
+        <br>
+        <H4>Text Fields</H4>
+        <p>
+            Text fields allow users to enter text into a UI. They typically appear in forms and dialogs. They also allow users to input, edit, and select text.
+        </p>
+        <Br>
+        <section class="container">
+
+            <H6>Filled</H6>
+            <span class="textfield">
+                <input type="text" required="required" id="vart" />
+                <label for="vat">Label Text</label>
+            </span>
+            <br>
+
+            <span class="textfield">
+                <input type="text" required="required" value="Populated" id="varc" />
+                <label for="varc">Label Text</label>
+            </span>
+
+            <br><br>
+            <H6>Outlined</H6>
+
+
+            <label class="textfield outlined">
+                <input placeholder=" ">
+                <span>Label Text</span>
+            </label>
+
+            <br>
+
+            <label class="textfield outlined">
+                <input required="required" value="Populated" placeholder=" ">
+                <span>Populated</span>
+            </label>
+
+        </section>
+        <br>
+          
+             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="proteus.js"></script>
+
+
+
+</body>
+
+</html>

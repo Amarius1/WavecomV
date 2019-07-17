@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proteus</title>
+    <!--down of a brave new world-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="icon.png">
+
+    <link href="proteus.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+    <style>
+        [showcase] {
+            background-color: rgba(251, 251, 251, 1);
+            height: 60%;
+            text-align: center;
+            align-items: center;
+            position: relative;
+            width: 50%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        [showcase2] {
+            height: 60%;
+            text-align: center;
+            align-items: center;
+            position: relative;
+            width: 50%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        [showcase] div {
+            top: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+        }
+
+        .invisible {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<span select>
+        <label class="ripple">Type</label>
+        <ul>
+            <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+            <a>Option 1</a>
+            <a>Option 2</a>
+            <a>Option 3</a>
+            <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+        </ul>
+    </span>
+
+
+    <span select class="outlined">
+        <label class="ripple">Type</label>
+        <ul>
+            <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+            <a>Option 1</a>
+            <a>Option 2</a>
+            <a>Option 3</a>
+            <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+        </ul>
+    </span>
+
+    <span select class="outlined rounded">
+        <label class="ripple">Type</label>
+        <ul>
+            <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+            <a>Option 1</a>
+            <a>Option 2</a>
+            <a>Option 3</a>
+            <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+        </ul>
+    </span>
+    
+      <span select class="condensed">
+        <label class="ripple">Type</label>
+        <ul>
+            <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+            <a>Option 1</a>
+            <a>Option 2</a>
+            <a>Option 3</a>
+            <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+        </ul>
+    </span>
+    
+       <span select class="condensed outlined">
+        <label class="ripple">Type</label>
+        <ul>
+            <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+            <a>Option 1</a>
+            <a>Option 2</a>
+            <a>Option 3</a>
+            <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+        </ul>
+    </span>
+
+
+    <span dropdown>
+        <a btn icon class="activator">more_vert</a>
+        <ul class="dd-menu">
+            <a btn>Food</a>
+            <a btn>Clothes</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn class="divider">Xiaomi</a>
+        </ul>
+    </span>
+
+    <span dropdown class="from-left">
+        <a btn icon class="activator">more_vert</a>
+        <ul class="dd-menu">
+            <a btn>Food</a>
+            <a btn>Clothes</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn>Accessories</a>
+            <a btn class="divider">Xiaomi</a>
+        </ul>
+    </span>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="proteus.js"></script>
+</body>
+
+</html>

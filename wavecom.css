@@ -1,0 +1,391 @@
+@import url("components/typography.css");
+@import url("components/button.css");
+@import url("components/ripple.css");
+@import url("components/select.css");
+@import url("components/tabs.css");
+@import url("components/bar.css");
+@import url("components/accordion.css");
+@import url("components/dropdown.css");
+@import url("components/cards.css");
+@import url("components/forms.css");
+@import url("components/datatables.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@font-face {
+    font-family: 'Material Icons Outlined';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v4/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+:root {
+    --accent: rgba(14, 0, 255,1);
+    --accent-soft: rgba(14, 0, 255, 0.08);
+    --accent-ripple: rgba(12, 36, 255, 0.2);
+
+    --accent-hover-darken: rgba(0, 110, 255, 1);
+    --card-bkg: white;
+    --accent-link: rgba(50, 0, 255, 1);
+    --corner-radius: 5px;
+    --tab-width: 150px;
+    --switch: rgba(60, 0, 265, 1);
+    --switch-bar: rgba(50, 10, 240, 0.25);
+    --light: white;
+    --mark: rgba(10, 0, 255, 0.2);
+    --fab-accent: rgba(2,2,2,1);
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+[icon]
+{
+    font-family: 'Material Icons Outlined';
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga' !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: rgba(50,50,50,1);
+}
+[icon].filled
+{
+    font-family: "Material Icons" !important;
+}
+
+
+.depth-0 {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0), 0 2px 1px -1px rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0) !important;
+}
+
+.depth-1 {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20) !important;
+}
+
+.depth-2 {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.20) !important;
+}
+
+.depth-3 {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.20) !important;
+}
+
+.depth-4 {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.20);
+}
+
+.depth-5 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.20);
+}
+
+.depth-6 {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.20);
+}
+
+.depth-7 {
+    box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.20);
+}
+
+.depth-8 {
+    box-shadow: 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 7px 8px -4px rgba(0, 0, 0, 0.20);
+}
+
+.depth-9 {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.20);
+}
+
+.depth-10 {
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.20);
+}
+.center, [center]
+{
+    text-align: center !important;
+     align-items: center;
+    justify-content: center;
+}
+.center *, [center] *
+{
+    text-align: left;
+     }
+.rounded
+{
+    border-radius: var(--corner-radius);
+}
+
+::-webkit-scrollbar {
+    display: flex;
+    width: 7px;
+    background: rgba(0, 0, 0, 0)
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #757575;
+}
+/* PREBUILT */
+
+
+progress.linear {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    height: 0.25em;
+    color: var(--accent);
+    background-color: rgba(60, 60, 60, 0.1);
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+}
+
+progress.linear::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+/* Determinate */
+progress.linear::-webkit-progress-value {
+    background-color: currentColor;
+    transition: all 0.2s;
+}
+
+progress.linear::-moz-progress-bar {
+    background-color: currentColor;
+    transition: all 0.2s;
+}
+
+/* Indeterminate */
+progress.linear:indeterminate {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, transparent 50%, currentColor 50%, currentColor 60%, transparent 60%, transparent 71.5%, currentColor 71.5%, currentColor 84%, transparent 84%);
+    animation: progress-linear 2s infinite linear;
+}
+
+progress.linear:indeterminate::-moz-progress-bar {
+    background-color: transparent;
+}
+
+@keyframes progress-linear {
+    0% {
+        background-size: 200% 100%;
+        background-position: left -31.25% top 0%;
+    }
+
+    50% {
+        background-size: 800% 100%;
+        background-position: left -49% top 0%;
+    }
+
+    100% {
+        background-size: 400% 100%;
+        background-position: left -102% top 0%;
+    }
+}
+
+
+
+
+
+
+progress.circular {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 50%;
+    padding: 0.25em;
+    width: 50px;
+    height: 50px;
+    color: var(--accent);
+    background-color: transparent;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+progress.circular.large {
+    width: 80px;
+    height: 80px;
+
+}
+
+progress.circular::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+/* Indeterminate */
+progress.circular:indeterminate {
+    -webkit-mask-image: linear-gradient(transparent 50%, black 50%), linear-gradient(to right, transparent 50%, black 50%);
+    mask-image: linear-gradient(transparent 50%, black 50%), linear-gradient(to right, transparent 50%, black 50%);
+    animation: progress-circular 6s infinite cubic-bezier(0.3, 0.6, 1, 1);
+}
+
+:-ms-lang(x),
+progress.circular:indeterminate {
+    animation: none;
+}
+
+progress.circular:indeterminate::before,
+progress.circular:indeterminate::-webkit-progress-value {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 0.25em;
+    border: solid 0.25em transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    width: 100% !important;
+    height: 100%;
+    background-color: transparent;
+    animation: progress-circular-pseudo 0.75s infinite linear alternate;
+}
+
+progress.circular:indeterminate::-moz-progress-bar {
+    box-sizing: border-box;
+    border: solid 0.25em transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    animation: progress-circular-pseudo 0.75s infinite linear alternate;
+}
+
+
+@keyframes progress-circular {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    12.5% {
+        transform: rotate(180deg);
+        animation-timing-function: linear;
+    }
+
+    25% {
+        transform: rotate(630deg);
+    }
+
+    37.5% {
+        transform: rotate(810deg);
+        animation-timing-function: linear;
+    }
+
+    50% {
+        transform: rotate(1260deg);
+    }
+
+    62.5% {
+        transform: rotate(1440deg);
+        animation-timing-function: linear;
+    }
+
+    75% {
+        transform: rotate(1890deg);
+    }
+
+    87.5% {
+        transform: rotate(2070deg);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        transform: rotate(2520deg);
+    }
+}
+
+@keyframes progress-circular-pseudo {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    29.4% {
+        border-left-color: transparent;
+    }
+
+    29.41% {
+        border-left-color: currentColor;
+    }
+
+    64.7% {
+        border-bottom-color: transparent;
+    }
+
+    64.71% {
+        border-bottom-color: currentColor;
+    }
+
+    100% {
+        border-left-color: currentColor;
+        border-bottom-color: currentColor;
+        transform: rotate(225deg);
+    }
+}
+
+
+[width]
+{
+    width: attr(width px) !important;
+}
+[btn].right
+{
+    float: right;
+}
+.container,
+[container] {
+    margin: 0px 5%;
+}		
+
+
+@media only screen and (max-width: 768px) {
+    .desktop {
+
+        display: none !important;
+
+    }
+}
+footer 
+{
+    min-height: 60px;
+}
+footer *
+{
+    display: inline-block;
+}
+footer.accent
+{
+    background-color: var(--accent);
+    filter: drop-shadow(0 -1px 3px rgba(70, 70, 70, 1));
+    color: white !important;
+}
+footer [actions] 
+{
+    float: right;
+    vertical-align: middle;
+}

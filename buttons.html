@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proteus</title>
+    <!--down of a brave new world-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="icon.png">
+
+    <link href="proteus.css" type="text/css" rel="stylesheet">
+
+
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <H4>Buttons</H4><br>
+
+    <div style="font-size: 0px;" class="container">
+
+        <a btn>Button</a>
+        <a btn class="accent"><i>email</i>Button</a>
+        <a btn class="outlined"><i>email</i>Button</a>
+        <a btn class="outlined accent">Button</a>
+        <a btn class="outlined filled">Button</a>
+        <a btn class="outlined accent large filled">Button<i right>email</i></a>
+        <a btn class="raised">Button</a>
+        <a btn class="raised accent">Button</a>
+        <a btn class="raised accent large">Button</a>
+        <a btn class="flat"><i>email</i>Button</a>
+        <a btn class="flat accent">Button</a>
+        <a btn class="flat accent large">Button</a>
+
+        <br>
+
+        <a btn icon>mic_none</a>
+        <a btn icon class="accent">email</a>
+        <a btn icon class="outlined">forum</a>
+        <a btn icon class="outlined accent">import_export</a>
+        <a btn icon class="outlined filled">phone</a>
+        <a btn icon class="outlined accent large filled">slow_motion_video</a>
+        <a btn icon class="raised">games</a>
+        <a btn icon class="raised accent">today</a>
+        <a btn icon class="raised accent large">offline_pin</a>
+        <a btn icon class="flat">thumb_up</a>
+        <a btn icon class="flat accent">thumb_down</a>
+        <a btn icon class="flat accent large">explore</a>
+
+    </div>
+
+    <H4>Chips</H4><br>
+
+    <div style="font-size: 0px;" class="container">
+        <a btn class="chip">Chip</a>
+        <a btn class="chip outlined"><i>directions_bike</i>Chip</a>
+        <a btn class="chip accent"><i>location_on</i>Portland</a>
+        <a btn class="chip outlined accent">Chip<i right action="delete">remove_circle</i></a>
+    </div>
+
+
+
+    <!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="proteus.js"></script>
+    <script>
+        $("i[action='delete']").click(function() {
+            console.log('clicked');
+            $(this).parent().remove();
+        });
+    </script>
+
+</body>
+
+</html>
