@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" href="icon.png">
 
-    <link href="proteus.css" type="text/css" rel="stylesheet">
+    <link href="highlight.css" type="text/css" rel="stylesheet">
+    <link href="wavecom.css" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <script>
@@ -18,7 +20,7 @@
         [card].demo {
             width: 100%;
             height: 160px;
-            background-color: rgba(200, 200, 200, 0.1);
+            background-color: rgba(255, 255, 255, 0.5);
             margin: 0px !important;
         }
 
@@ -26,24 +28,41 @@
             position: absolute !important;
             border-radius: 0px 0px var(--corner-radius) var(--corner-radius)
         }
+         [bar][oof].depth-1 {
+            background-color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        [bar][oof] {
+            background-color: transparent;
+        }
+        [bar][oof] *
+        {
+            color: white !important;
+        }
+        [bar][oof].depth-1 *
+        {
+            color: black !important;
+        }
     </style>
 </head>
 
-<body style="background-color: rgba(235,235,235,0.1); overflow-x: hidden;">
+<body style="background: url('abstract7.png'); overflow-x: hidden;">
 
-    <section bar>
-        <a btn icon id="drawer" class="large">menu</a>
-        <p>Drawer</p>
+    <section style="z-index: 999999999 !important;" bar oof class="fixed flat">
+        <a data-aos="fade-right" btn icon id="drawer" class="large">menu</a>
+        <p data-aos="fade-right">Navbars & More</p>
 
-        <span actions>
-            <a href="https://material.io/design/components/navigation-drawer.html" btn class="raised accent">Resources</a>
+        <span data-aos="fade-left" actions>
+            <a btn icon class="large" href="https://material.io/design/components/app-bars-top.html">launch</a>
         </span>
     </section>
     <section container>
-        <br>
+        <br><br>
+        <H5 data-aos="fade-up" center style="color: white;">Try swiping from the left, the Material Design drawer will open just like in a native app.</H5>
+        <br><br>
 
 
-        <section bar>
+        <section data-aos="fade-right" bar>
             <a btn icon class="large">menu</a>
             <p>Drawer</p>
             <input type="search" name="search" placeholder="Search..." class="desktop">
@@ -55,7 +74,7 @@
 
         <br>
 
-        <section bar>
+        <section data-aos="fade-left" bar>
             <a btn icon class="large">apps</a>
             <p>Apps</p>
             <input type="search" name="search" placeholder="Search..." class="desktop">
@@ -82,7 +101,7 @@
 
         <br>
 
-        <section bar>
+        <section data-aos="fade-right" bar>
             <a btn icon class="accent large">equalizer</a>
             <p>Rockets</p>
             <span style="display: flex !important" actions>
@@ -94,7 +113,7 @@
 
         <br>
 
-        <section bar>
+        <section data-aos="fade-left" bar>
             <a btn icon class="accent large">subscriptions</a>
             <p>Player</p>
 
@@ -108,23 +127,23 @@
 
         <br>
 
-        <span card style="padding: 0px !important;"class="demo">
+        <span data-aos="fade-up" card style="padding: 0px !important;" class="demo">
             <section bar class="fixed">
                 <a btn icon class="accent large">subscriptions</a>
                 <p>Player</p>
 
                 <span actions>
-                <header tabs class="condensed">
-                    <a btn href="#tab4"><i icon>speaker_notes</i>Item One</a>
-                    <a btn class="active" href="#tab5"><i icon>calendar_today</i>Item Two</a>
-                    <a btn href="#tab6"><i icon>chrome_reader_mode</i>Item Three</a>
-                </header>
+                    <header tabs class="condensed">
+                        <a btn href="#tab4"><i icon>speaker_notes</i>Item One</a>
+                        <a btn class="active" href="#tab5"><i icon>calendar_today</i>Item Two</a>
+                        <a btn href="#tab6"><i icon>chrome_reader_mode</i>Item Three</a>
+                    </header>
                 </span>
 
 
             </section>
-    
-    
+
+
             <section content>
                 <span id="tab4">
                     <p>Content</p>
@@ -142,31 +161,31 @@
         </span>
 
         <br> <br>
-        
-           <span card style="padding: 0px !important;"class="demo">
+
+        <span data-aos="fade-up" card style="padding: 0px !important;" class="demo">
             <section bar class="fixed">
                 <a btn icon class="accent large">subscriptions</a>
                 <p>Player</p>
                 <span actions>
-                 <input type="search" name="search" placeholder="Search..." class="desktop">
-                 <a btn class="raised accent">Button</a>
+                    <input type="search" name="search" placeholder="Search..." class="desktop">
+                    <a btn class="raised accent">Button</a>
                 </span>
                 <header tabs class="condensed">
                     <a btn href="#tab1" class="active"><i icon>speaker_notes</i>Item One</a>
                     <a btn href="#tab2"><i icon>calendar_today</i>Item Two</a>
                     <a btn href="#tab3"><i icon>chrome_reader_mode</i>Item Three</a>
                 </header>
-             
+
 
 
             </section>
-    
-    
+
+
             <section content>
                 <span id="tab1" class="active">
                     <p>Content</p>
                 </span>
-                <span id="tab2" >
+                <span id="tab2">
                     <p>More content</p>
                 </span>
                 <span id="tab3">
@@ -177,10 +196,10 @@
 
 
         </span>
-        
+
         <br><br>
 
-        <span card class="demo">
+        <span data-aos="fade-up" card class="demo">
             <section bar class="bottom">
                 <a btn icon class="large">menu</a>
                 <p>Drawer</p>
@@ -193,7 +212,7 @@
 
         <br> <br>
 
-        <span card class="demo">
+        <span data-aos="fade-up" card class="demo">
             <section bar class="bottom accent">
                 <a btn icon class="large">menu</a>
                 <p>Drawer</p>
@@ -206,73 +225,247 @@
         </span>
 
         <br><br>
-        
-        <span card class="demo">
+
+        <span data-aos="fade-up" card style="height: 200px;" class="demo">
             <section bar class="inset bottom">
                 <a btn icon class="large">menu</a>
                 <p>Inset</p>
                 <a btn icon class="fab">add</a>
                 <span actions>
                     <a btn class="accent">Button</a>
-                    <a btn icon>dashboard</a>
+                    <span dropdown class="from-bottom">
+                        <a btn icon class="activator">more_vert</a>
+                        <ul class="dd-menu">
+                            <a btn>Option1</a>
+                            <a btn>Option2</a>
+                            <a btn>Option3</a>
+                            <a btn>Option4</a>
+
+                        </ul>
+                    </span>
                 </span>
             </section>
         </span>
+<br><br><br>
+        <pre data-aos="fade-up" class="depth-5" style="border-radius: 5px; background-color: black;"><code data-language="html">
+<section bar>
+    <a btn icon class="large">menu</a>
+    <p>Drawer</p>
+    <input type="search" name="search" placeholder="Search..." class="desktop">
+    <span actions>
+        <a btn>Button</a>
+        <a btn icon>dashboard</a>
+    </span>
+</section>
 
-        <!-- Custom select structure -->
-        <H4>Swipe from the left!</H4>
-        <p>Progress bars:</p><br>
+<section bar>
+    <a btn icon class="large">apps</a>
+    <p>Apps</p>
+    <input type="search" name="search" placeholder="Search..." class="desktop">
+    <span actions>
+        <a btn class="raised accent">Button</a>
+        <a btn icon>library_books</a>
+        <span dropdown>
+            <a btn icon class="activator">more_vert</a>
+            <ul class="dd-menu">
+                <a btn>Food</a>
+                <a btn>Clothes</a>
+                <a btn>Accessories</a>
+                <a btn>Accessories</a>
+                <a btn>Accessories</a>
+                <a btn>Accessories</a>
+                <a btn>Accessories</a>
+                <a btn>Accessories</a>
+                <a btn>Accessories</a>
+                <a btn class="divider">Xiaomi</a>
+            </ul>
+        </span>
+    </span>
+</section>
+
+<section bar>
+    <a btn icon class="accent large">equalizer</a>
+    <p>Rockets</p>
+    <span style="display: flex !important" actions>
+        <a btn class="fill">RD-180</a>
+        <a btn class="fill">RS-25</a>
+        <a btn icon class="large">slow_motion_video</a>
+    </span>
+</section>
+
+<section bar>
+    <a btn icon class="accent large">subscriptions</a>
+    <p>Player</p>
+    <span style="display: flex !important" actions>
+        <a btn icon class="large">volume_mute</a>
+            <a btn icon class="large">volume_down</a>
+            <a btn icon class="large">volume_up</a>
+        </span>
+    <input type="search" name="search" class="wide" placeholder="Search...">
+</section>
+
+<section bar class="fixed">
+    <a btn icon class="accent large">subscriptions</a>
+        <p>Player</p>
+        <span actions>
+            <header tabs class="condensed">
+                <a btn href="#tab4"><i icon>speaker_notes</i>Item One</a>
+                <a btn class="active" href="#tab5"><i icon>calendar_today</i>Item Two</a>
+                <a btn href="#tab6"><i icon>chrome_reader_mode</i>Item Three</a>
+            </header>
+        </span>
+</section>
+<section content>
+    <span id="tab4">
+        <p>Content</p>
+    </span>
+    <span id="tab5" class="active">
+        <p>More content</p>
+    </span>
+    <span id="tab6">
+        <p>Even more content</p>
+    </span>
+</section>
+
+<section bar class="fixed">
+    <a btn icon class="accent large">subscriptions</a>
+    <p>Player</p>
+    <span actions>
+        <input type="search" name="search" placeholder="Search..." class="desktop">
+        <a btn class="raised accent">Button</a>
+    </span>
+    <header tabs class="condensed">
+        <a btn href="#tab1" class="active"><i icon>speaker_notes</i>Item One</a>
+        <a btn href="#tab2"><i icon>calendar_today</i>Item Two</a>
+        <a btn href="#tab3"><i icon>chrome_reader_mode</i>Item Three</a>
+    </header>
+</section>
+<section content>
+    <span id="tab1" class="active">
+        <p>Content</p>
+    </span>
+    <span id="tab2" >
+        <p>More content</p>
+    </span>
+    <span id="tab3">
+        <p>Even more content</p>
+    </span>
+</section>
+
+<section bar class="bottom">
+    <a btn icon class="large">menu</a>
+    <p>Drawer</p>
+    <span actions>
+        <a btn>Button</a>
+        <a btn icon>dashboard</a>
+    </span>
+</section>
+
+<section bar class="bottom accent">
+    <a btn icon class="large">menu</a>
+    <p>Drawer</p>
+    <a btn icon class="fab">add</a>
+    <span actions>
+        <a btn>Button</a>
+        <a btn icon>dashboard</a>
+    </span>
+</section>
+
+<section bar class="inset bottom">
+    <a btn icon class="large">menu</a>
+    <p>Inset</p>
+    <a btn icon class="fab">add</a>
+    <span actions>
+        <a btn class="accent">Button</a>
+        <span dropdown class="from-bottom">
+            <a btn icon class="activator">more_vert</a>
+            <ul class="dd-menu">
+                <a btn>Option1</a>
+                <a btn>Option2</a>
+                <a btn>Option3</a>
+                <a btn>Option4</a>      
+            </ul>
+        </span>
+    </span>
+</section>
+     
+</code></pre>
+
+        <br><br><br>
+        <H5 data-aos="fade-right">Progress bars:</H5><br>
 
 
         <progress class="linear"></progress>
 
         <progress class="circular"></progress>
         <progress class="circular large"></progress>
+<br><br><br><br>
+ <pre data-aos="fade-up" class="depth-5" style="border-radius: 5px; background-color: black;"><code data-language="html">
+ <progress class="linear"></progress>
 
+<progress class="circular"></progress>
 
+<progress class="circular large"></progress>
+ 
+ 
+ </code></pre>
 
     </section>
 
+    <br><br><br>
 
 
-
+    <footer class="accent">
+        <br>
+        <div container>
+            <H4>Wavecom</H4><br>
+            <p>By Dorobantu Marius-Alexandru</p><br><br>
+        </div>
+        <span container actions>
+            <a btn href="https://github.com/Amarius1" class="raised"><i>build</i>Github</a>
+            <a btn href="https://jquery.com/" class="raised">Jquery</a>
+        </span>
+    </footer>
     <section drawer>
-        <div class="overflow">
+        <div class='overflow'>
             <header>
-                <H5>Proteus</H5>
+                <H5>Wavecom</H5>
                 <label>A material design framework</label>
             </header>
-            <a accordion class="ripple">Your account<i icon>expand_more</i></a>
+            <a accordion class="ripple">Documentation<i icon>expand_more</i></a>
             <ul content>
-                <a btn>Payment</a>
-                <a btn>Apps</a>
-                <a btn>Giftcards</a>
+                <a btn>Semantic</a>
+                <a btn>Material design</a>
+                <a btn>Modular</a>
+                <a btn>Responsive</a>
             </ul>
             <ul class="divider">
-                <a btn class="active"><i icon>folder</i>My files</a>
-                <a btn><i icon>theaters</i>Shows</a>
-                <a btn><i icon>watch</i>Wear OS</a>
-                <a btn><i icon>videogame_asset</i>Stadia</a>
-                <a btn><i icon>smartphone</i>Your Device</a>
-                <a btn><i icon>phonelink</i>Phonelink</a>
-                <a btn><i icon>opacity</i>Theme</a>
-                <a btn><i icon>theaters</i>Shows</a>
-                <label>Media</label>
-                <a btn><i icon>videogame_asset</i>Stadia</a>
-                <a btn><i icon>smartphone</i>Your Device</a>
-                <a btn><i icon>phonelink</i>Phonelink</a>
-                <a btn><i icon>opacity</i>Theme</a>
-                <a btn><i icon>theaters</i>Shows</a>
-                <a btn><i icon>videogame_asset</i>Stadia</a>
-                <a btn><i icon>smartphone</i>Your Device</a>
-                <a btn><i icon>phonelink</i>Phonelink</a>
-                <a btn><i icon>opacity</i>Theme</a>
-                <a btn><i icon>theaters</i>Shows</a>
+                <a href="index.html" btn><i icon>web_asset</i>Welcome</a>
+                <a href="about.html" btn><i icon>account_circle</i>About</a>
+                <a href="contact.html" btn><i icon>mail</i>Contact us</a>
+                <label>Components</label>
+                <a href="typography.html" btn>Typography</a>
+                <a href="buttons.html" btn>Buttons</a>
+                <a href="cards.html" btn>Cards</a>
+                <a href="tabs.html" btn>Tabs</a>
+                <a href="forms.html" btn>Forms</a>
+                <a href="bar.html" btn class="active">Navbars</a>
+                <a href="datatables.html" btn>Datatables</a>
+                <label>Examples</label>
+                <a href="flux.html" btn><i>smartphone</i>FluxOS</a>
+                <a href="med.html" btn><i>accessible</i>MedX</a>
+
             </ul>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="proteus.js"></script>
+    <script src="wavecom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="rainbow-custom.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 
 

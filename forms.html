@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" href="icon.png">
 
-    <link href="proteus.css" type="text/css" rel="stylesheet">
+    <link href="highlight.css" type="text/css" rel="stylesheet">
+    <link href="wavecom.css" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <script>
@@ -15,27 +17,29 @@
     </script>
 
     <style>
-
+       
     </style>
 </head>
 
-<body style="background-color: rgba(235,235,235,0.1); overflow-x: hidden;">
+<body style="background: url('bkg6.jpg'); overflow-x: hidden;">
 
-    <section bar class="flat fixed">
-        <a btn icon id="drawer" class="large">menu</a>
-        <p>Forms</p>
+    <section bar oof class="fixed flat">
+        <a data-aos="fade-right" btn icon id="drawer" class="large">menu</a>
+        <p data-aos="fade-right">Forms & Menus</p>
 
-        <span actions>
-            <a href="https://material.io/design/components/navigation-drawer.html" btn class="raised accent">Resources</a>
+        <span data-aos="fade-left" actions>
+            <a btn icon class="large" href="https://material.io/design/components/text-fields.html">launch</a>
         </span>
     </section>
+    
+
     <section class="container">
         <br><br>
-        <H4>Switches</H4>
-        <p>Switches toggle the state of a single setting on or off. They are the preferred way to adjust settings on mobile.
+        <H4 data-aos="fade-right">Switches</H4>
+        <p data-aos="fade-right">Switches toggle the state of a single setting on or off. They are the preferred way to adjust settings on mobile.
         </p>
         <Br>
-        <section class="container">
+        <section data-aos="fade-left" class="container">
 
             <span class="switch">
                 <input type="checkbox" id="switch1" checked>
@@ -47,13 +51,24 @@
                 <label for="switch2" class="thumb contained">Contained</label>
             </span>
 
-        </section>
+        </section><Br>
+        <pre data-aos="fade-up" class="depth-5" style="border-radius: 5px; background-color: black;"><code data-language="html">
+<span class="switch">
+    <input type="checkbox" id="switch1" checked>
+    <label for="switch1" class="thumb">Normal</label>
+</span>
+            
+<span class="switch">
+    <input type="checkbox" id="switch2" checked>
+    <label for="switch2" class="thumb contained">Contained</label>
+</span>
+        </code></pre>
 
-        <H4>Checkboxes</H4>
-        <p>Checkboxes allow the user to select one or more items from a set. Checkboxes can be used to turn an option on or off.
+        <H4 data-aos="fade-right">Checkboxes</H4>
+        <p data-aos="fade-right">Checkboxes allow the user to select one or more items from a set. Checkboxes can be used to turn an option on or off.
         </p>
         <Br>
-        <section class="container">
+        <section data-aos="fade-left" class="container">
 
             <input type='checkbox' class='checkbox'>Normal
 
@@ -61,14 +76,20 @@
 
             <input type='checkbox' class='checkbox indeterminate'>Indeterminate
 
-        </section>
+        </section><Br>
+        <pre data-aos="fade-up" class="depth-5" style="border-radius: 5px; background-color: black;"><code data-language="html">
+<input type='checkbox' class='checkbox'>Normal
+ 
+<input type='checkbox' class='checkbox indeterminate'>Indeterminate
+
+</code></pre>
         <br>
-        <H4>Radio Buttons</H4>
-        <p>
+        <H4 data-aos="fade-right">Radio Buttons</H4>
+        <p data-aos="fade-right">
             Radio buttons allow the user to select one option from a set. Use radio buttons when the user needs to see all available options. If available options can be collapsed, consider using a dropdown menu because it uses less space.
         </p>
         <Br>
-        <section class="container">
+        <section data-aos="fade-left" class="container">
 
             <span class="radio">
                 <input id="1" type="radio" name="g" checked>
@@ -79,14 +100,26 @@
                 <input id="2" type="radio" name="g">
                 <label for="2">Option 2</label>
             </span>
-        </section>
+        </section><Br>
+        <pre data-aos="fade-up" class="depth-5" style="border-radius: 5px; background-color: black;"><code data-language="html">
+<span class="radio">
+    <input id="1" type="radio" name="g" checked>
+    <label for="1">Option 1</label>
+</span>
+           
+<span class="radio">
+    <input id="2" type="radio" name="g">
+    <label for="2">Option 2</label>
+</span>
+
+</code></pre>
         <br>
-        <H4>Text Fields</H4>
-        <p>
+        <H4 data-aos="fade-right">Text Fields</H4>
+        <p data-aos="fade-right">
             Text fields allow users to enter text into a UI. They typically appear in forms and dialogs. They also allow users to input, edit, and select text.
         </p>
         <Br>
-        <section class="container">
+        <section data-aos="fade-left" class="container">
 
             <H6>Filled</H6>
             <span class="textfield">
@@ -116,13 +149,329 @@
                 <span>Populated</span>
             </label>
 
-        </section>
+        </section><br>
+        <pre data-aos="fade-up" class="depth-5" style="border-radius: 5px; background-color: black;"><code data-language="html">
+<span class="textfield">
+    <input type="text" required="required" id="vart" />
+    <label for="vat">Label Text</label>
+</span>
+            
+<span class="textfield">
+    <input type="text" required="required" value="Populated" id="varc" />
+    <label for="varc">Label Text</label>
+</span>
+
+
+<label class="textfield outlined">
+    <input placeholder=" ">
+    <span>Label Text</span>
+</label>
+
+<label class="textfield outlined">
+    <input required="required" value="Populated" placeholder=" ">
+    <span>Populated</span>
+</label>
+
+</code></pre>
+        </Br></Br></Br></Br></Br></Br></Br>
+        <div>
+            <H4>Select</H4>
+            <p>
+                A select dropdown is used to select an option from multiple ones.
+            </p>
+            <span select>
+                <label class="ripple">Type</label>
+                <ul>
+                    <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+                    <a>Option 1</a>
+                    <a>Option 2</a>
+                    <a>Option 3</a>
+                    <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+                </ul>
+            </span>
+
+
+            <span select class="outlined">
+                <label class="ripple">Type</label>
+                <ul>
+                    <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+                    <a>Option 1</a>
+                    <a>Option 2</a>
+                    <a>Option 3</a>
+                    <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+                </ul>
+            </span>
+
+            <span select class="outlined rounded">
+                <label class="ripple">Type</label>
+                <ul>
+                    <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+                    <a>Option 1</a>
+                    <a>Option 2</a>
+                    <a>Option 3</a>
+                    <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+                </ul>
+            </span>
+
+            <span select class="condensed">
+                <label class="ripple">Type</label>
+                <ul>
+                    <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+                    <a>Option 1</a>
+                    <a>Option 2</a>
+                    <a>Option 3</a>
+                    <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+                </ul>
+            </span>
+
+            <span select class="condensed outlined">
+                <label class="ripple">Type</label>
+                <ul>
+                    <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+                    <a>Option 1</a>
+                    <a>Option 2</a>
+                    <a>Option 3</a>
+                    <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+                </ul>
+            </span>
+
+            <pre data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="depth-5" style="border-radius: 5px; background-color: black;"><code data-language="html">
+<span select>
+    <label class="ripple">Type</label>
+    <ul>
+        <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+        <a>Option 1</a>
+        <a>Option 2</a>
+        <a>Option 3</a>
+        <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+    </ul>
+</span>
+
+<span select class="outlined">
+    <label class="ripple">Type</label>
+    <ul>
+        <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+        <a>Option 1</a>
+        <a>Option 2</a>
+        <a>Option 3</a>
+        <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+    </ul>
+</span>
+
+<span select class="outlined rounded">
+    <label class="ripple">Type</label>
+    <ul>
+        <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+        <a>Option 1</a>
+        <a>Option 2</a>
+        <a>Option 3</a>
+        <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+    </ul>
+</span>
+    
+<span select class="condensed">
+    <label class="ripple">Type</label>
+    <ul>
+        <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+        <a>Option 1</a>
+        <a>Option 2</a>
+        <a>Option 3</a>
+        <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+    </ul>
+</span>
+    
+<span select class="condensed outlined">
+    <label class="ripple">Type</label>
+    <ul>
+        <a class="active" data-value="None" data-display-text="Select">Nothing</a>
+        <a>Option 1</a>
+        <a>Option 2</a>
+        <a>Option 3</a>
+        <a data-display-text="Homo Sapiens">Homo Sapiens</a>
+    </ul>
+</span> 
+    </code></pre>
+
+            <br>
+            <H4 data-aos="fade-right">Dropdowns</H4>
+            <p data-aos="fade-right">
+                Dropdowns are used to provide access to actions in a very compact way.
+            </p>
+
+            <div container>
+                <span style="z-index: 2" data-aos="fade-left" dropdown>
+                    <a btn icon class="activator">more_vert</a>
+                    <ul class="dd-menu">
+                        <a btn>Food</a>
+                        <a btn>Clothes</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn class="divider">Xiaomi</a>
+                    </ul>
+                </span>
+
+                <span style="z-index: 2" data-aos="fade-left" dropdown class="from-left">
+                    <a btn icon class="activator">more_vert</a>
+                    <ul class="dd-menu">
+                        <a btn>Food</a>
+                        <a btn>Clothes</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn>Accessories</a>
+                        <a btn class="divider">Xiaomi</a>
+                    </ul>
+                </span>
+            </div>
+            <br><br><br>
+
+            <pre data-aos="fade-down" class="depth-5" style="border-radius: 5px; background-color: black; z-index: 1 !important;"><code data-language="html">
+<span dropdown>
+    <a btn icon class="activator">more_vert</a>
+    <ul class="dd-menu">
+        <a btn>Food</a>
+        <a btn>Clothes</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn class="divider">Xiaomi</a>
+    </ul>
+</span>
+
+<span dropdown class="from-left">
+    <a btn icon class="activator">more_vert</a>
+    <ul class="dd-menu">
+        <a btn>Food</a>
+        <a btn>Clothes</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn>Accessories</a>
+        <a btn class="divider">Xiaomi</a>
+    </ul>
+</span>
+</code></pre>
+
+
+            <H4 data-aos="fade-right">Accordion</H4>
+
+            <p data-aos="fade-right">Accordions are used to hide content in a more compact way without disturbing the flow of the page. Group them inside a simple card for nice usage outside containers.</p><br>
+
+            <span data-aos="fade-left" card style="padding: 0px !important; margin: 0px !important;">
+                <a accordion class="ripple">Section 1<i icon>expand_more</i></a>
+                <ul content class="divider">
+                    <a btn>Semantic</a>
+                    <a btn>Material design</a>
+                    <a btn>Modular</a>
+                    <a btn>Responsive</a>
+                </ul>
+                <a accordion class="ripple">Section 2<i icon>expand_more</i></a>
+                <ul content class="divider">
+                    <a btn style="max-width: 100px" class="accent large raised">Totally Content</a>
+                </ul>
+                <a accordion class="ripple">Section 3<i icon>expand_more</i></a>
+                <ul content class="divider">
+                    <a btn class="active">ROA - best romanian band</a>
+
+                </ul>
+            </span>
+            <br><br><br>
+            <pre data-aos="fade-down" class="depth-5" style="border-radius: 5px; background-color: black; z-index: 1 !important;"><code data-language="html">
+<a accordion class="ripple">Section 1<i icon>expand_more</i></a>
+<ul content class="divider">
+    <a btn>Semantic</a>
+    <a btn>Material design</a>
+    <a btn>Modular</a>
+    <a btn>Responsive</a>
+</ul>
+
+<a accordion class="ripple">Section 2<i icon>expand_more</i></a>
+<ul content class="divider">
+    <a btn style="max-width: 100px" class="accent large raised">Totally Content</a>
+</ul>
+
+<a accordion class="ripple">Section 3<i icon>expand_more</i></a>
+<ul content class="divider">
+    <a btn class="active">ROA - best romanian band</a>             
+</ul>
+ 
+</code></pre>
+
+
+
+
+
+
+
+    </section>
+
+    <br><br><br><br>
+    <footer class="accent">
         <br>
-          
-             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-        <script src="proteus.js"></script>
+        <div container>
+            <H4>Wavecom</H4><br>
+            <p>By Dorobantu Marius-Alexandru</p><br><br>
+        </div>
+        <span container actions>
+            <a btn href="https://github.com/Amarius1" class="raised"><i>build</i>Github</a>
+            <a btn href="https://jquery.com/" class="raised">Jquery</a>
+        </span>
+    </footer>
+    <section drawer>
+        <div class='overflow'>
+            <header>
+                <H5>Wavecom</H5>
+                <label>A material design framework</label>
+            </header>
+            <a accordion class="ripple">Documentation<i icon>expand_more</i></a>
+            <ul content>
+                <a btn>Semantic</a>
+                <a btn>Material design</a>
+                <a btn>Modular</a>
+                <a btn>Responsive</a>
+            </ul>
+            <ul class="divider">
+                <a href="index.html" btn><i icon>web_asset</i>Welcome</a>
+                <a href="about.html" btn><i icon>account_circle</i>About</a>
+                <a href="contact.html" btn><i icon>mail</i>Contact us</a>
+                <label>Components</label>
+                <a href="typography.html" btn>Typography</a>
+                <a href="buttons.html" btn>Buttons</a>
+                <a href="cards.html" btn>Cards</a>
+                <a href="tabs.html" btn>Tabs</a>
+                <a href="forms.html" btn class="active">Forms</a>
+                <a href="bar.html" btn>Navbars</a>
+                <a href="datatables.html" btn>Datatables</a>
+                <label>Examples</label>
+                <a href="flux.html" btn><i>smartphone</i>FluxOS</a>
+                <a href="med.html" btn><i>accessible</i>MedX</a>
 
+            </ul>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="wavecom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="rainbow-custom.min.js"></script>
 
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

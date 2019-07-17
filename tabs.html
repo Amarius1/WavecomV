@@ -7,141 +7,370 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" href="icon.png">
 
-    <link href="proteus.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="highlight.css" type="text/css" rel="stylesheet">
+    <link href="wavecom.css" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
 
     <script>
         document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
+    <style>
+        [bar][oof].depth-1 {
+            background-color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        [bar][oof].depth-1 * {
+            color: black !important;
+        }
+
+        [bar][oof] {
+            background-color: transparent;
+        }
+
+        [bar][oof] * {
+            color: white !important;
+        }
+
+        [card] {
+            width: 100%;
+            margin: 0px !important;
+
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-image: url('abstract6.png');  overflow-x: hidden;">
+    <section bar oof class="fixed flat">
+        <a data-aos="fade-right" btn icon id="drawer" class="large">menu</a>
+        <p data-aos="fade-right">Tabs</p>
 
-
-
-    <header tabs>
-        <a btn class="active" href="#tab1">Item One</a>
-        <a btn href="#tab2">Item Two</a>
-        <a btn href="#tab3">Item Three</a>
-    </header>
-    <section content>
-        <span id="tab1" class="tab">
-            <p>Content</p>
-        </span>
-        <span id="tab2" class="tab active">
-            <p>More content</p>
-        </span>
-        <span id="tab3" class="tab">
-            <p>Even more content</p>
-        </span>
-    </section>
-
-    <header tabs class="condensed center">
-        <a btn href="#tab4"><i icon>speaker_notes</i>Item One</a>
-        <a btn class="active" href="#tab5"><i icon>calendar_today</i>Item Two</a>
-        <a btn href="#tab6"><i icon>chrome_reader_mode</i>Item Three</a>
-    </header>
-    <section content>
-        <span id="tab4">
-            <p>Content</p>
-        </span>
-        <span id="tab5" class="active">
-            <p>More content</p>
-        </span>
-        <span id="tab6">
-            <p>Even more content</p>
+        <span data-aos="fade-left" actions>
+            <a href="https://material.io/design/components/tabs.html" btn icon class="large">launch</a>
         </span>
     </section>
 
 
-    <header tabs class="condensed center">
-        <a btn icon href="#tab7">alarm_add</a>
-        <a btn icon href="#tab8">alarm</a>
-        <a btn icon href="#tab9" class="active">alarm_on</a>
-    </header>
-    <section content>
-        <span id="tab7">
-            <p>Content</p>
+    <br>
+    <section data-aos="fade-down" container style="background-color: rgba(255,255,255,0.6); padding: 20px;" class="rounded">
+
+        <H5>
+            Tabs organize content across different screens, data sets, and other interactions.</H5>
+        <br>
+        <p>Each tab should contain content that is distinct from other tabs in a set. For example, tabs can present different sections of news, different genres of music, or different themes of documents.</p>
+
+
+
+
+    </section>
+
+
+    <br><br>
+
+
+    <div container>
+        <span card data-aos="fade-up">
+
+            <header tabs class="depth-1">
+                <a btn class="active" href="#tab1">Item One</a>
+                <a btn href="#tab2">Item Two</a>
+                <a btn href="#tab3">Item Three</a>
+            </header>
+            <section content>
+                <span id="tab1" class="tab">
+                    <p>Content</p>
+                </span>
+                <span id="tab2" class="tab active">
+                    <p>More content</p>
+                </span>
+                <span id="tab3" class="tab">
+                    <p>Even more content</p>
+                </span>
+            </section>
+
+            <header tabs class="condensed center depth-1">
+                <a btn href="#tab4"><i icon>speaker_notes</i>Item One</a>
+                <a btn class="active" href="#tab5"><i icon>calendar_today</i>Item Two</a>
+                <a btn href="#tab6"><i icon>chrome_reader_mode</i>Item Three</a>
+            </header>
+            <section content>
+                <span id="tab4">
+                    <p>Content</p>
+                </span>
+                <span id="tab5" class="active">
+                    <p>More content</p>
+                </span>
+                <span id="tab6">
+                    <p>Even more content</p>
+                </span>
+            </section>
+
+
+            <header tabs class="condensed center depth-1">
+                <a btn icon href="#tab7">alarm_add</a>
+                <a btn icon href="#tab8">alarm</a>
+                <a btn icon href="#tab9" class="active">alarm_on</a>
+            </header>
+            <section content>
+                <span id="tab7">
+                    <p>Content</p>
+                </span>
+                <span id="tab8">
+                    <p>More content</p>
+                </span>
+                <span id="tab9" class="active">
+                    <p>Even more content</p>
+                </span>
+            </section>
+
+            <br><br><br><br>
+            <div style="max-width: 360px" class="depth-3 rounded">
+
+                <section content>
+                    <span id="tab10">
+                        <p>Content</p>
+                    </span>
+                    <span id="tab11" class="active">
+                        <p>More content</p>
+                    </span>
+                    <span id="tab12">
+                        <p>Even more content</p>
+                    </span>
+                </section>
+                <header tabs class="bottom ">
+                    <a btn icon href="#tab10">alarm_add</a>
+                    <a btn icon class="active" href="#tab11">alarm</a>
+                    <a btn icon href="#tab12">alarm_on</a>
+                </header>
+
+
+            </div>
+
+
+            <div style="max-width: 360px" class="depth-3 rounded">
+
+                <section content>
+                    <span id="tab13">
+                        <p>Content</p>
+                    </span>
+                    <span id="tab14" class="active">
+                        <p>More content</p>
+                    </span>
+                    <span id="tab15">
+                        <p>Even more content</p>
+                    </span>
+                </section>
+                <header tabs class="bottom stacked">
+                    <a btn href="#tab13"><i icon>alarm_add</i>Item one</a>
+                    <a btn class="active" href="#tab14"><i icon>alarm</i>Item two</a>
+                    <a btn href="#tab15"><i icon>alarm_on</i>Item three</a>
+                </header>
+
+
+            </div>
+
+            <div style="max-width: 360px" class="depth-3 rounded">
+                <header tabs class="stacked">
+                    <a btn href="#tab16"><i icon>alarm_add</i>Item one</a>
+                    <a btn class="active" href="#tab17"><i icon>alarm</i>Item two</a>
+                    <a btn href="#tab18"><i icon>alarm_on</i>Item three</a>
+                </header>
+                <section content>
+                    <span id="tab16">
+                        <p>Content</p>
+                    </span>
+                    <span id="tab17" class="active">
+                        <p>More content</p>
+                    </span>
+                    <span id="tab18">
+                        <p>Even more content</p>
+                    </span>
+                </section>
+
+
+
+            </div>
+
+
+
+
         </span>
+
+
+        <pre data-aos="fade-up" class="depth-5" style="border-radius: 0px 0px 5px 5px !important; background-color: black;"><code data-language="html">
+<header tabs>
+    <a btn class="active" href="#tab1">Item One</a>
+    <a btn href="#tab2">Item Two</a>
+    <a btn href="#tab3">Item Three</a>
+</header>
+<section content>
+    <span id="tab1" class="tab">
+        <p>Content</p>
+    </span>
+    <span id="tab2" class="tab active">
+        <p>More content</p>
+    </span>
+    <span id="tab3" class="tab">
+        <p>Even more content</p>
+    </span>
+</section>
+
+
+<header tabs class="condensed center">
+    <a btn href="#tab4"><i icon>speaker_notes</i>Item One</a>
+    <a btn class="active" href="#tab5"><i icon>calendar_today</i>Item Two</a>
+    <a btn href="#tab6"><i icon>chrome_reader_mode</i>Item Three</a>
+</header>
+<section content>
+    <span id="tab4">
+        <p>Content</p>
+    </span>
+    <span id="tab5" class="active">
+        <p>More content</p>
+    </span>
+    <span id="tab6">
+        <p>Even more content</p>
+    </span>
+</section>
+
+
+
+<header tabs class="condensed center">
+    <a btn icon href="#tab7">alarm_add</a>
+    <a btn icon href="#tab8">alarm</a>
+    <a btn icon href="#tab9" class="active">alarm_on</a>
+</header>
+<section content>
+    <span id="tab7">
+        <p>Content</p>
+    </span>
         <span id="tab8">
-            <p>More content</p>
+    <p>More content</p>
         </span>
-        <span id="tab9" class="active">
-            <p>Even more content</p>
+    <span id="tab9" class="active">
+        <p>Even more content</p>
+    </span>
+</section>
+
+
+<section content>
+    <span id="tab10">
+        <p>Content</p>
+    </span>
+    <span id="tab11" class="active">
+        <p>More content</p>
+    </span>
+    <span id="tab12">
+        <p>Even more content</p>
+    </span>
+</section>
+<header tabs class="bottom">
+    <a btn icon href="#tab10">alarm_add</a>
+    <a btn icon class="active" href="#tab11">alarm</a>
+    <a btn icon href="#tab12">alarm_on</a>
+</header>
+
+
+<section content>
+    <span id="tab13">
+        <p>Content</p>
+    </span>
+    <span id="tab14" class="active">
+        <p>More content</p>
+    </span>
+    <span id="tab15">
+        <p>Even more content</p>
+    </span>
+</section>
+<header tabs class="bottom stacked">
+    <a btn href="#tab13"><i icon>alarm_add</i>Item one</a>
+    <a btn class="active" href="#tab14"><i icon>alarm</i>Item two</a>
+    <a btn href="#tab15"><i icon>alarm_on</i>Item three</a>
+</header>
+
+
+<header tabs class="stacked">
+    <a btn href="#tab16"><i icon>alarm_add</i>Item one</a>
+    <a btn class="active" href="#tab17"><i icon>alarm</i>Item two</a>
+    <a btn href="#tab18"><i icon>alarm_on</i>Item three</a>
+</header>
+<section content>
+    <span id="tab16">
+        <p>Content</p>
+    </span>
+    <span id="tab17" class="active">
+        <p>More content</p>
+    </span>
+    <span id="tab18">
+        <p>Even more content</p>
+    </span>
+</section>
+            </div>
+        </code></pre>
+
+
+
+
+
+    </div
+    
+    
+    </div>
+    <footer class="accent">
+        <br>
+        <div container>
+            <H4>Wavecom</H4><br>
+            <p>By Dorobantu Marius-Alexandru</p><br><br>
+        </div>
+        <span container actions>
+            <a btn href="https://github.com/Amarius1" class="raised"><i>build</i>Github</a>
+            <a btn href="https://jquery.com/" class="raised">Jquery</a>
         </span>
+    </footer>
+    <section drawer>
+        <div class='overflow'>
+            <header>
+                <H5>Wavecom</H5>
+                <label>A material design framework</label>
+            </header>
+            <a accordion class="ripple">Documentation<i icon>expand_more</i></a>
+            <ul content>
+                <a btn>Semantic</a>
+                <a btn>Material design</a>
+                <a btn>Modular</a>
+                <a btn>Responsive</a>
+            </ul>
+            <ul class="divider">
+                <a href="index.html" btn><i icon>web_asset</i>Welcome</a>
+                <a href="about.html" btn><i icon>account_circle</i>About</a>
+                <a href="contact.html" btn><i icon>mail</i>Contact us</a>
+                <label>Components</label>
+                <a href="typography.html" btn>Typography</a>
+                <a href="buttons.html" btn>Buttons</a>
+                <a href="cards.html" btn>Cards</a>
+                <a href="tabs.html" btn class="active">Tabs</a>
+                <a href="forms.html" btn>Forms</a>
+                <a href="bar.html" btn>Navbars</a>
+                <a href="datatables.html" btn>Datatables</a>
+                <label>Examples</label>
+                <a href="flux.html" btn><i>smartphone</i>FluxOS</a>
+                <a href="med.html" btn><i>accessible</i>MedX</a>
+
+            </ul>
+        </div>
     </section>
 
-    <br><br><br><br>
-    <div style="max-width: 360px" class="depth-3 rounded">
-
-        <section content>
-            <span id="tab10">
-                <p>Content</p>
-            </span>
-            <span id="tab11" class="active">
-                <p>More content</p>
-            </span>
-            <span id="tab12">
-                <p>Even more content</p>
-            </span>
-        </section>
-        <header tabs class="bottom">
-            <a btn icon href="#tab10">alarm_add</a>
-            <a btn icon class="active" href="#tab11">alarm</a>
-            <a btn icon href="#tab12">alarm_on</a>
-        </header>
-
-
-    </div>
-
-
-    <div style="max-width: 360px" class="depth-3 rounded">
-
-        <section content>
-            <span id="tab13">
-                <p>Content</p>
-            </span>
-            <span id="tab14" class="active">
-                <p>More content</p>
-            </span>
-            <span id="tab15">
-                <p>Even more content</p>
-            </span>
-        </section>
-        <header tabs class="bottom stacked">
-            <a btn href="#tab13"><i icon>alarm_add</i>Item one</a>
-            <a btn class="active" href="#tab14"><i icon>alarm</i>Item two</a>
-            <a btn href="#tab15"><i icon>alarm_on</i>Item three</a>
-        </header>
-
-
-    </div>
-
-    <div style="max-width: 360px" class="depth-3 rounded">
-        <header tabs class="stacked">
-            <a btn href="#tab16"><i icon>alarm_add</i>Item one</a>
-            <a btn class="active" href="#tab17"><i icon>alarm</i>Item two</a>
-            <a btn href="#tab18"><i icon>alarm_on</i>Item three</a>
-        </header>
-        <section content>
-            <span id="tab16">
-                <p>Content</p>
-            </span>
-            <span id="tab17" class="active">
-                <p>More content</p>
-            </span>
-            <span id="tab18">
-                <p>Even more content</p>
-            </span>
-        </section>
-
-
-
-    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="proteus.js"></script>
+    <script src="wavecom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="rainbow-custom.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Proteus</title>
+    <title>Wavecom</title>
     <!--down of a brave new world-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" href="icon.png">
@@ -36,15 +36,23 @@
         [card] {
             width: 30%;
             box-shadow: none !important;
-            background-color: transparent;
+            background-color: rgba(255,255,255,0.7);
+            margin: 0px !important;
+            border-radius: 0px !important;
 
         }
-        [bar]
-        {
-            background-color: rgba(255,255,255,0.95) !important;
+
+        [bar] {
+            background-color: transparent !important;
         }
+        [bar].depth-1
+        {
+            background-color: rgba(255,255,255,0.8) !important;
+        }
+
         [card]>img {
             min-width: 0px;
+            margin-top: 10px !important;
         }
 
         .center *:not([title]),
@@ -59,47 +67,48 @@
     </style>
 </head>
 
-<body style="background-color: rgba(235,235,235,0.1); overflow-x: hidden;">
+<body style="background-image: url('abstract1.png');  overflow-x: hidden;">
 
     <section bar class="fixed flat">
-        <a btn icon id="drawer" class="large">menu</a>
-        <p>Wavecom</p>
+        <a data-aos="fade-right" btn icon id="drawer" class="large">menu</a>
+        <p data-aos="fade-right">Wavecom</p>
 
-        <span actions>
+        <span data-aos="fade-left" actions>
             <a btn icon class="large">launch</a>
         </span>
     </section>
 
 
-    <section class="center" style="margin-top: 10%; font-size: 0px !important">
+    <section class="center" style="margin-top: 10%; font-size: 0px !important;">
 
-        <div  data-aos="fade-right" style="display: inline-block; vertical-align: middle"><img src="logo.png" width="220px"></div>
+        <div data-aos="fade-right" style="display: inline-block; vertical-align: middle"><img src="logo.png" width="220px"></div>
         <div title style="display: inline-block; vertical-align: middle">
 
-            <H1  data-aos="fade-right">Meet Wavecom <span accent>!</span></H1>
+            <H1 data-aos="fade-right">Meet Wavecom <span accent>!</span></H1>
             <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: left;">Fast</p>
             <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: left;">Semantic</p>
             <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: left;">Themable</p>
             <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: left;">Modern</p>
+            <p data-aos="fade-up-left" style="display: inline-block; vertical-align: middle; text-align: left;">Responsive</p>
 
         </div>
 
 
 
     </section>
-    <main style="margin-top: 26vh" class="container">
+    <main style="margin-top: 26vh;" class="container">
 
         <H5 center data-aos="fade-up">Wavecom is a lightweight CSS and Javascript design framework based on Google's Material Design guidelines.</H5>
 
         <section center container data-aos="fade-up">
             <br><br>
-            <a btn class="accent outlined filled">Download</a><a btn class="outlined">Github</a>
+            <a btn class="accent outlined filled large">Download</a><a btn class="outlined large">Github</a>
             <br><br><br>
 
             <img class="rounded" src="start.png"><Br><Br><Br><br><br><br><br>
 
             <span data-aos="fade-right" card depth-0>
-                <img src="speed.png" width="100px">
+                <img src="speed.png" width="100px" style="border-radius: 100%">
                 <br>
                 <H4>Fast</H4>
                 <br>
@@ -107,7 +116,7 @@
                 <a btn icon class="large accent">offline_bolt</a>
             </span>
             <span data-aos="fade-down" card>
-                <img src="semantic.png" width="100px">
+                <img src="semantic.png" width="100px" style="border-radius: 100%">
                 <br>
                 <H4>Semantic</H4>
                 <br>
@@ -117,7 +126,7 @@
 
             </span>
             <span data-aos="fade-left" card>
-                <img src="md.png" width="100px">
+                <img src="md.png" width="100px" style="border-radius: 100%">
                 <br>
                 <H4>Material</H4>
                 <br>
@@ -142,7 +151,7 @@
 
 
 
-            <br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
 
 
 
@@ -158,58 +167,54 @@
             <H4>Wavecom</H4><br>
 
             <p>By Dorobantu Marius-Alexandru</p><br><br>
-            
-            
+
+
 
         </div>
         <span container actions>
             <a btn href="https://github.com/Amarius1" class="raised"><i>build</i>Github</a>
             <a btn href="https://jquery.com/" class="raised">Jquery</a>
-            
-        
-        
+
+
+
         </span>
 
 
 
     </footer>
-            
-            
-     <section drawer>
+
+
+    <section drawer>
         <div class='overflow'>
-        <header>
-            <H5>Wavecom</H5>
-            <label>A material design framework</label>
-        </header>
-        <a accordion class="ripple">Documentation<i icon>expand_more</i></a>
-        <ul content>
-            <a btn>Semantic</a>
-            <a btn>Material design</a>
-            <a btn>Modular</a>
-            <a btn>Responsive</a>
-        </ul>
-        <ul class="divider">
-            <a btn class="active"><i icon>web_asset</i>Welcome</a>
-            <a btn><i icon>theaters</i>Shows</a>
-            <a btn><i icon>watch</i>Wear OS</a>
-            <a btn><i icon>videogame_asset</i>Stadia</a>
-            <a btn><i icon>smartphone</i>Your Device</a>
-            <a btn><i icon>phonelink</i>Phonelink</a>
-            <a btn><i icon>opacity</i>Theme</a>
-            <a btn><i icon>theaters</i>Shows</a>
-            <label>Media</label>
-            <a btn><i icon>videogame_asset</i>Stadia</a>
-            <a btn><i icon>smartphone</i>Your Device</a>
-            <a btn><i icon>phonelink</i>Phonelink</a>
-            <a btn><i icon>opacity</i>Theme</a>
-            <a btn><i icon>theaters</i>Shows</a>
-            <a btn><i icon>videogame_asset</i>Stadia</a>
-            <a btn><i icon>smartphone</i>Your Device</a>
-            <a btn><i icon>phonelink</i>Phonelink</a>
-            <a btn><i icon>opacity</i>Theme</a>
-            <a btn><i icon>theaters</i>Shows</a>
-        </ul>
-            </div>
+            <header>
+                <H5>Wavecom</H5>
+                <label>A material design framework</label>
+            </header>
+            <a accordion class="ripple">Documentation<i icon>expand_more</i></a>
+            <ul content>
+                <a btn>Semantic</a>
+                <a btn>Material design</a>
+                <a btn>Modular</a>
+                <a btn>Responsive</a>
+            </ul>
+            <ul class="divider">
+                <a href="index.html" btn class="active"><i icon>web_asset</i>Welcome</a>
+                <a href="about.html" btn><i icon>account_circle</i>About</a>
+                <a href="contact.html" btn><i icon>mail</i>Contact us</a>
+                <label>Components</label>
+                <a href="typography.html" btn>Typography</a>
+                <a href="buttons.html" btn>Buttons</a>
+                <a href="cards.html"btn>Cards</a>
+                <a href="tabs.html" btn>Tabs</a>
+                <a href="forms.html" btn>Forms</a>
+                <a href="bar.html" btn>Navbars</a>
+                <a href="datatables.html" btn>Datatables</a>
+                <label>Examples</label>
+                <a href="flux.html" btn><i>smartphone</i>FluxOS</a>
+                <a href="med.html" btn><i>accessible</i>MedX</a>
+
+            </ul>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

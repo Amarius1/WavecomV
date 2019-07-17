@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" href="icon.png">
 
-    <link href="proteus.css" type="text/css" rel="stylesheet">
+        <link href="highlight.css" type="text/css" rel="stylesheet">
+    <link href="wavecom.css" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <script>
@@ -21,28 +23,34 @@
 
 <body style="background-color: rgba(235,235,235,0.1); overflow-x: hidden;">
 
-    <section bar class="fixed">
-        <a btn icon id="drawer" class="large">menu</a>
-        <p>Forms</p>
-
-        <span actions>
-            <a href="https://material.io/design/components/navigation-drawer.html" btn class="raised accent">Resources</a>
+    <section bar class="fixed flat">
+        <a  data-aos="fade-right"btn icon id="drawer" class="large">menu</a>
+        <p data-aos="fade-right">Datatables</p>
+        <header data-aos="fade-right" tabs style="display: inline-block !important; width: 188.55px; margin-bottom: -10px;">
+                <a btn class="active" href="#tab1">Example</a>
+                <a btn href="#tab2">Code</a>
+        </header>
+         <span data-aos="fade-left" actions>
+            <a style="position: absolute; top: 0px; right: 0;" btn icon class="large" href="https://material.io/design/components/data-tables.html">launch</a>
         </span>
     </section>
 
     
     
     
+    <section content>
+                <span id="tab1" class="tab active">    
+    
     <section class="container">
         <br> <br>
-<H4>Data tables</H4>
-<p>Data tables display information in a way that’s easy to scan, so that users can look for patterns and insights. They can be embedded in primary content, such as cards.
+<H4 data-aos="fade-right">Data tables</H4>
+<p data-aos="fade-right">Data tables display information in a way that’s easy to scan, so that users can look for patterns and insights. They can be embedded in primary content, such as cards.
 </p>
 <Br>
 
-<H6>Regular</H6><br>
+<H6 data-aos="fade-right">Regular</H6><br>
 
-  <div style='overflow-x:auto; padding: 5px 5px;'>
+  <div data-aos="fade-left" style='overflow-x:auto; padding: 5px 5px;'>
   <table>
     <thead>
       <th>Dessert (100g serving)</th>
@@ -71,9 +79,9 @@
   </table>
   </div>
 <br><br>
-<H6>Flat</H6>
+<H6 data-aos="fade-right">Flat</H6>
 <br>
-<div style='overflow-x:auto; padding: 5px 5px;'>
+<div  data-aos="fade-left" style='overflow-x:auto; padding: 5px 5px;'>
 <table class="flat">
   <thead>
     <th>Dessert (100g serving)</th>
@@ -102,9 +110,9 @@
 </table>
 </div>
 <br><br>
-<H6>Accent</H6>
+<H6 data-aos="fade-right">Accent</H6>
 <br>
-  <div style='overflow-x:auto; padding: 5px 5px;'>
+  <div data-aos="fade-left" style='overflow-x:auto; padding: 5px 5px;'>
 <table class="accent">
   <thead>
     <th>Dessert (100g serving)</th>
@@ -133,9 +141,9 @@
 </table>
 </div>
 <br><br>
-<H6>Actions</H6>
+<H6 data-aos="fade-right">Actions</H6>
 <br>
-<div style='overflow-x:auto; padding: 5px 5px;'>
+<div data-aos="fade-left" style='overflow-x:auto; padding: 5px 5px;'>
 <table>
   <thead>
     <th>Dessert (100g serving)</th>
@@ -164,10 +172,174 @@
 </table>
 </div>
 
-<section>
-          
+        </Br></section></span>
+    <span id="tab2" class="tab">
 
-        <script src="proteus.js"></script>
+ <pre data-aos="fade-right" class="depth-5" style="border-radius: 5px; background-color: black;"><code data-language="html">
+<table>
+    <thead>
+        <th>Dessert (100g serving)</th>
+        <th>Calories</th>
+        <th>Fat (g)</th>
+        <th>Carbs (g)</th>
+        <th>Protein (g)</th>
+    </thead>
+    <tr>
+        <td>Frozen yogurt</td>
+        <td>159</td>
+        <td>5.0</td>
+        <td>24</td>
+        <td>4.0</td>
+    </tr>
+    <tr>
+        <td>Ice cream sandwich</td>
+        <td>237</td>
+        <td>9.0</td>
+        <td>37</td>
+        <td>4.3</td>
+    </tr>
+</table>
+  
+<table class="flat">
+    <thead>
+        <th>Dessert (100g serving)</th>
+        <th>Calories</th>
+        <th>Fat (g)</th>
+        <th>Carbs (g)</th>
+        <th>Protein (g)</th>
+    </thead>
+    <tr>
+        <td>Frozen yogurt</td>
+        <td>159</td>
+        <td>5.0</td>
+        <td>24</td>
+        <td>4.0</td>
+    </tr>
+    <tr>
+        <td>Ice cream sandwich</td>
+        <td>237</td>
+        <td>9.0</td>
+        <td>37</td>
+        <td>4.3</td>
+    </tr>
+</table>
+
+<table class="accent">
+    <thead>
+        <th>Dessert (100g serving)</th>
+        <th>Calories</th>
+        <th>Fat (g)</th>
+        <th>Carbs (g)</th>
+        <th>Protein (g)</th>
+    </thead>
+    <tr>
+        <td>Frozen yogurt</td>
+        <td>159</td>
+        <td>5.0</td>
+        <td>24</td>
+        <td>4.0</td>
+    </tr>
+    <tr>
+        <td>Ice cream sandwich</td>
+        <td>237</td>
+        <td>9.0</td>
+        <td>37</td>
+        <td>4.3</td>
+    </tr>
+</table>
+ 
+ 
+<table>
+    <thead>
+        <th>Dessert (100g serving)</th>
+        <th>Calories</th>
+        <th><a btn icon>arrow_downward</a>Fat (g)</th>
+        <th>Carbs (g)</th>
+        <th>Protein (g)</th>
+  </thead>
+  <tr>
+        <td><input type='checkbox' class='checkbox'> Frozen yogurt</td>
+        <td>159</td>
+        <td>5.0</td>
+        <td>24</td>
+        <td>4.0</td>
+  </tr>
+  <tr>
+        <td><input type='checkbox' class='checkbox'> Ice cream sandwich</td>
+        <td>237</td>
+        <td>9.0</td>
+        <td>37</td>
+        <td>4.3</td>
+  </tr>
+</table>
+ </code></pre>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </span>
+</section>
+    <br><br><br>
+     <footer class="accent">
+        <br>
+        <div container>
+            <H4>Wavecom</H4><br>
+            <p>By Dorobantu Marius-Alexandru</p><br><br>
+        </div>
+        <span container actions>
+            <a btn href="https://github.com/Amarius1" class="raised"><i>build</i>Github</a>
+            <a btn href="https://jquery.com/" class="raised">Jquery</a>
+        </span>
+    </footer>
+    <section drawer>
+        <div class='overflow'>
+            <header>
+                <H5>Wavecom</H5>
+                <label>A material design framework</label>
+            </header>
+            <a accordion class="ripple">Documentation<i icon>expand_more</i></a>
+            <ul content>
+                <a btn>Semantic</a>
+                <a btn>Material design</a>
+                <a btn>Modular</a>
+                <a btn>Responsive</a>
+            </ul>
+            <ul class="divider">
+                <a href="index.html" btn><i icon>web_asset</i>Welcome</a>
+                <a href="about.html" btn><i icon>account_circle</i>About</a>
+                <a href="contact.html" btn><i icon>mail</i>Contact us</a>
+                <label>Components</label>
+                <a href="typography.html" btn>Typography</a>
+                <a href="buttons.html" btn>Buttons</a>
+                <a href="cards.html" btn>Cards</a>
+                <a href="tabs.html" btn>Tabs</a>
+                <a href="forms.html" btn>Forms</a>
+                <a href="bar.html" btn>Navbars</a>
+                <a href="datatables.html" btn class="active">Datatables</a>
+                <label>Examples</label>
+                <a href="flux.html" btn><i>smartphone</i>FluxOS</a>
+                <a href="med.html" btn><i>accessible</i>MedX</a>
+
+            </ul>
+        </div>
+    </section>         
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="wavecom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="rainbow-custom.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 
 

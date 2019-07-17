@@ -2,77 +2,399 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Proteus</title>
+    <title>Wavecom</title>
     <!--down of a brave new world-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" href="icon.png">
-
-    <link href="proteus.css" type="text/css" rel="stylesheet">
-
+    <link href="highlight.css" type="text/css" rel="stylesheet">
+    <link href="wavecom.css" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script>
         document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
 
     <style>
+        .centerboth {
 
 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -50px !important;
+
+        }
+
+        ul li {
+            font-size: 20px;
+            background-color: var(--accent-ripple);
+            border-radius: var(--corner-radius);
+            display: inline-block;
+            padding: 5px;
+        }
+
+        ul {
+            padding-left: 0px;
+            display: inline-block;
+        }
+
+        H6 {
+            display: inline-block !important;
+        }
+
+        [card] pre {
+            background-color: black;
+            margin: 0px;
+            display: inline-block !important;
+            vertical-align: top;
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+
+        [card] {
+            padding: 0px !important;
+            width: 49% !important;
+        }
+
+        [card] [btn] {
+            margin-top: 2px !important;
+
+        }
+
+        [contents] {
+            display: inline-block !important;
+        }
+
+        [contents] [btn] {
+            display: block !important;
+        }
+
+        [center-inside] * {
+            text-align: center !important;
+            align-content: center !important;
+            align-items: center;
+        }
+
+        .invisible {
+            display: none !important;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #code {
+
+                width: 100% !important;
+                display: block !important;
+
+            }
+
+            #code [btn] {
+
+                display: inline-block !important;
+
+            }
+
+            #interactive {
+
+                width: 100% !important;
+                display: block !important;
+                height: 200px !important;
+
+            }
+
+            #workspace {
+                margin: 0px !important;
+            }
+
+            [contents] {
+                display: block !important;
+            }
+            .centerboth {
+
+
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            margin-left: -50px !important;
+
+        }
+        }
+        [bar].depth-1
+        {
+            background-color: rgba(255,255,255,0.8) !important;
+        }
+        [bar]
+        {
+            background-color: transparent;
+        }
     </style>
 </head>
 
-<body>
+<body style="background-image: url('abstract5.png'); background-repeat: no-repeat; background-size:100% 100%; overflow-x: hidden;">
+
+    <section bar class="fixed flat">
+        <a data-aos="fade-right" btn icon id="drawer" class="large">menu</a>
+        <p data-aos="fade-right">Buttons</p>
+
+        <span data-aos="fade-left" actions>
+            <a btn icon class="large">launch</a>
+        </span>
+    </section>
 
 
-    <H4>Buttons</H4><br>
+    <section style="background-color: rgba(255,255,255,0.7); margin-top: -58px; padding-top: 80px;">
 
-    <div style="font-size: 0px;" class="container">
+        <div data-aos="fade-up" container>
+            <H5 accent>&lt;a btn class=" ">&lt;i>mail&lt;/i>Button&lt;/a></H5>
+            <H5>Buttons allow users to take actions, and make choices, with a single tap.</H5> <br><br>
+            <H6>Flavours:</H6>
+            <ul>
+                <li>.outlined</li>
+                <li>.raised</li>
+                <li>.flat</li>
+            </ul>
+            <p>You can mix and match the following modifiers for any of the button flavours.</p>
+            <H6>Modifiers:</H6>
+            <ul>
+                <li>.accent</li>
+                <li>.large</li>
+            </ul>
 
-        <a btn>Button</a>
-        <a btn class="accent"><i>email</i>Button</a>
-        <a btn class="outlined"><i>email</i>Button</a>
-        <a btn class="outlined accent">Button</a>
-        <a btn class="outlined filled">Button</a>
-        <a btn class="outlined accent large filled">Button<i right>email</i></a>
-        <a btn class="raised">Button</a>
-        <a btn class="raised accent">Button</a>
-        <a btn class="raised accent large">Button</a>
-        <a btn class="flat"><i>email</i>Button</a>
-        <a btn class="flat accent">Button</a>
-        <a btn class="flat accent large">Button</a>
+            <br><br><br>
+        </div>
+        <div container id="workspace">
+            <span data-aos="fade-right" id="code" card class="depth-5">
 
+                <pre><code data-language="html">
+<a btn>Button</a>
+
+<a btn class="accent">Button</a>
+        
+        
+<a btn class="outlined">Button</a>
+        
+<a btn class="outlined accent">Button</a>
+ 
+<a btn class="outlined accent filled">Button</a> 
+
+ 
+<a btn class="raised">Button</a> 
+  
+<a btn class="raised accent">Button</a> 
+
+
+<a btn class="flat">Button</a> 
+  
+<a btn class="flat accent">Button</a> 
+        </code></pre>
+
+
+                <div contents center-inside>
+
+                    <a btn>Button</a>
+                    <a btn class="accent">Button</a>
+                    <a btn class="outlined">Button</a>
+                    <a btn class="outlined accent">Button</a>
+                    <a btn class="outlined accent filled">Button</a>
+                    <a btn class="raised">Button</a>
+                    <a btn class="raised accent">Button</a>
+                    <a btn class="flat">Button</a>
+
+                    <a btn class="flat accent">Button</a>
+                </div>
+
+
+
+
+
+
+            </span>
+            <span data-aos="fade-left" id="interactive" card style="height: 378px;" class="depth-5">
+
+                <span select class="condensed outlined">
+                    <label class="ripple">Size</label>
+                    <ul>
+                        <a class="normal active" data-value="None" data-display-text="Size">Normal</a>
+                        <a class="larger">Large</a>
+                    </ul>
+                </span>
+                <span class="switch" style="vertical-align: bottom; margin-top: 7px; margin-left: 5px;">
+                    <input type="checkbox" id="switch1">
+                    <label for="switch1" class="thumb contained">Accent</label>
+                </span>
+                <span class="switch">
+                    <input type="checkbox" id="switch2" checked>
+                    <label for="switch2" class="thumb contained">Icon</label>
+                </span>
+                <span id="filled" class="switch invisible">
+                    <input type="checkbox" id="switch3">
+                    <label for="switch3" class="thumb contained">Filled</label>
+                </span>
+
+                <header tabs class="depth-1">
+                    <a btn class="active" href="#regular">Regular</a>
+                    <a btn href="#outlined">Outlined</a>
+                    <a btn href="#raised">Raised</a>
+                    <a btn href="#flat">Flat</a>
+                </header>
+                <section content>
+                    <span id="regular" class="tab active">
+                        <a btn class="test centerboth"><i>mail</i>Button</a>
+                    </span>
+                    <span id="outlined" class="tab">
+                        <a btn class="test centerboth outlined"><i>mail</i>Button</a>
+                    </span>
+                    <span id="raised" class="tab">
+                        <a btn class="test centerboth raised"><i>mail</i>Button</a>
+                    </span>
+                    <span id="flat" class="tab">
+                        <a btn class="test centerboth flat"><i>mail</i>Button</a>
+                    </span>
+                </section>
+
+            </span>
+
+
+
+            </span>
+        </div>
+
+
+
+
+
+        </div>
+        <br><br>
+        <section data-aos="fade-up" container>
+        <H5 accent>&lt;a btn class="chip ">&lt;i>location_on&lt;/i>Chip&lt;/a></H5>
+        <H4>Chips</H4><br>
+        <H5>Chips are compact elements that represent an input, attribute, or action.</H5><br>
+    
+        <H6>Flavours:</H6>
+        <ul>
+            <li>.outlined</li>
+        </ul>
+        <p>You can add icons inside of chips and they can also be dimissable by adding <span accent>action="delete"</span> to an icon they contain.</p>
+        <H6>Modifiers:</H6>
+        <ul>
+            <li>.accent</li>
+        </ul>
+
+        <div style="font-size: 0px;">
+            <a btn class="chip">Chip</a>
+            <a btn class="chip outlined"><i>directions_bike</i>Chip</a>
+            <a btn class="chip accent"><i>location_on</i>Portland</a>
+            <a btn class="chip outlined accent">Chip<i right action="delete">remove_circle</i></a>
+            <a btn class="chip outlined accent">Chippy<i right action="delete">remove_circle</i></a>
+            <a btn class="chip outlined accent">Chip<i right action="delete">remove_circle</i></a>
+        </div>
+        </section>
+        <br><br>
+
+    </section>
+
+  
+
+
+
+    </main>
+    <footer class="accent">
         <br>
+        <div container>
+            <H4>Wavecom</H4><br>
+            <p>By Dorobantu Marius-Alexandru</p><br><br>
+        </div>
+        <span container actions>
+            <a btn href="https://github.com/Amarius1" class="raised"><i>build</i>Github</a>
+            <a btn href="https://jquery.com/" class="raised">Jquery</a>
+        </span>
+    </footer>
+    <section drawer>
+        <div class='overflow'>
+            <header>
+                <H5>Wavecom</H5>
+                <label>A material design framework</label>
+            </header>
+            <a accordion class="ripple">Documentation<i icon>expand_more</i></a>
+            <ul content>
+                <a btn>Semantic</a>
+                <a btn>Material design</a>
+                <a btn>Modular</a>
+                <a btn>Responsive</a>
+            </ul>
+            <ul class="divider">
+                <a href="index.html" btn><i icon>web_asset</i>Welcome</a>
+                <a href="about.html" btn><i icon>account_circle</i>About</a>
+                <a href="contact.html" btn><i icon>mail</i>Contact us</a>
+                <label>Components</label>
+                <a href="typography.html" btn>Typography</a>
+                <a href="buttons.html" btn class="active">Buttons</a>
+                <a href="cards.html" btn>Cards</a>
+                <a href="tabs.html" btn>Tabs</a>
+                <a href="forms.html" btn>Forms</a>
+                <a href="bar.html" btn>Navbars</a>
+                <a href="datatables.html" btn>Datatables</a>
+                <label>Examples</label>
+                <a href="flux.html" btn><i>smartphone</i>FluxOS</a>
+                <a href="med.html" btn><i>accessible</i>MedX</a>
 
-        <a btn icon>mic_none</a>
-        <a btn icon class="accent">email</a>
-        <a btn icon class="outlined">forum</a>
-        <a btn icon class="outlined accent">import_export</a>
-        <a btn icon class="outlined filled">phone</a>
-        <a btn icon class="outlined accent large filled">slow_motion_video</a>
-        <a btn icon class="raised">games</a>
-        <a btn icon class="raised accent">today</a>
-        <a btn icon class="raised accent large">offline_pin</a>
-        <a btn icon class="flat">thumb_up</a>
-        <a btn icon class="flat accent">thumb_down</a>
-        <a btn icon class="flat accent large">explore</a>
+            </ul>
+        </div>
+    </section>
 
-    </div>
-
-    <H4>Chips</H4><br>
-
-    <div style="font-size: 0px;" class="container">
-        <a btn class="chip">Chip</a>
-        <a btn class="chip outlined"><i>directions_bike</i>Chip</a>
-        <a btn class="chip accent"><i>location_on</i>Portland</a>
-        <a btn class="chip outlined accent">Chip<i right action="delete">remove_circle</i></a>
-    </div>
-
-
-
-    <!--scripts-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="proteus.js"></script>
+    <script src="wavecom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="rainbow-custom.min.js"></script>
+
+
     <script>
-        $("i[action='delete']").click(function() {
+        AOS.init();
+    </script>
+    <script>
+        $(function() { //run when the DOM is ready
+            $(".normal").click(function() { //use a class, since your ID gets mangled
+                $(".test").removeClass("large"); //add the class to the clicked element
+            });
+        });
+
+        $(function() { //run when the DOM is ready
+            $(".larger").click(function() { //use a class, since your ID gets mangled
+                $(".test").addClass("large"); //add the class to the clicked element
+            });
+        });
+
+        $(function() { //run when the DOM is ready
+            $("[for='switch1']").click(function() { //use a class, since your ID gets mangled
+                $(".test").toggleClass("accent"); //add the class to the clicked element
+            });
+        });
+        $(function() { //run when the DOM is ready
+            $("[for='switch2']").click(function() { //use a class, since your ID gets mangled
+                $(".test i").toggleClass("invisible"); //add the class to the clicked element
+            });
+        });
+
+        $(function() { //run when the DOM is ready
+            $("[for='switch3']").click(function() { //use a class, since your ID gets mangled
+                $(".test.outlined").toggleClass("filled"); //add the class to the clicked element
+            });
+        });
+
+        $(function() { //run when the DOM is ready
+            $("[href='#outlined']").click(function() { //use a class, since your ID gets mangled
+                $("#filled").removeClass("invisible"); //add the class to the clicked element
+            });
+            $("[href='#regular']").click(function() { //use a class, since your ID gets mangled
+                $("#filled").addClass("invisible"); //add the class to the clicked element
+            });
+            $("[href='#raised']").click(function() { //use a class, since your ID gets mangled
+                $("#filled").addClass("invisible"); //add the class to the clicked element
+            });
+            $("[href='#flat']").click(function() { //use a class, since your ID gets mangled
+                $("#filled").addClass("invisible"); //add the class to the clicked element
+            });
+        });
+         $("i[action='delete']").click(function() {
             console.log('clicked');
             $(this).parent().remove();
         });

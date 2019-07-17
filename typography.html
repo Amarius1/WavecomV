@@ -2,42 +2,170 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Proteus</title>
+    <title>Typography</title>
     <!--down of a brave new world-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" href="icon.png">
-
-    <link href="proteus.css" type="text/css" rel="stylesheet">
+    <link href="highlight.css" type="text/css" rel="stylesheet">
+    <link href="wavecom.css" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script>
         document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
 
     <style>
-     
-        
+        [bar][oof].depth-1 {
+            background-color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        [bar][oof] {
+            background-color: transparent;
+        }
+
+        ul li {
+            font-size: 20px;
+            background-color: var(--accent-ripple);
+            border-radius: var(--corner-radius);
+            display: inline-block;
+            padding: 5px;
+        }
+
+        ul {
+            padding-left: 0px;
+            display: inline-block;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        [card] pre {
+            background-color: black;
+            margin: 0px;
+            display: inline-block !important;
+            vertical-align: top;
+            padding-top: 0px;
+            margin-top: 0px;
+
+        }
+
+        [card] {
+
+            width: 100% !important;
+            background-color: black;
+            margin: 0px !important;
+        }
+         @media only screen and (max-width: 768px) {
+            [container] {
+
+                margin: 0% 2% !important;
+            }
+        }
     </style>
 </head>
 
 <body>
-    
-    <H1>H1</H1>
-    <H2>H2</H2>
-    <H3>H3</H3>
-    <H4>H4</H4>
-    <H5>H5</H5>
-    <H6>H6</H6>
-    <p>Subtitle1</p>
-    <p strong>Subtitle2</p>
-    <article>Article</article>
-    <H6 capitalize tooltip="Print + P">uppercase</H6><br>
-    <H6 accent>Accent</H6>
-    
+    <section bar oof class="fixed flat">
+        <a data-aos="fade-right" btn icon id="drawer" class="large">menu</a>
+        <p data-aos="fade-right">Typography</p>
 
- 
+        <span data-aos="fade-left" actions>
+            <a btn icon class="large">launch</a>
+        </span>
+    </section>
+    <main data-aos="fade-up" container>
+        <br><br>
+        <H5>These are your regular HTML5 typography elements styled to perfection.</H5><br><br>
+        <H6>Flavours:</H6>
+        <ul data-aos="fade-right">
+            <li>[capitalize]</li>
+            <li>[accent]</li>
+            <li>[strong]</li>
+        </ul><br><br><br>
+        <H1>H1</H1>
+        <H2>H2 Lorem</H2>
+        <H3>H3 Lorem ipsum</H3>
+        <H4>H4 Lorem ipsum</H4>
+        <H5>H5 Lorem ipsum</H5>
+        <H6>H6 Lorem ipsum</H6>
+        <p>P Lorem ipsum</p>
+        <p strong>P strong Lorem ipsum</p>
+        <article>ARTICLE Lorem ipsum</article>
+        <H6 capitalize>Lorem ipsum</H6>
+        <H6 accent>Lorem ipsum</H6>
+        <br><br>
 
-    <!--scripts-->
-    <script src="proteus.js"></script>
+        <pre card data-aos="fade-up" class="rounded depth-5"><code data-language="html">
+<H1>H1 Lorem ipsum</H1>
+<H2>H2 Lorem ipsum</H2>
+<H3>H3 Lorem ipsum</H3>
+<H4>H4 Lorem ipsum</H4>
+<H5>H5 Lorem ipsum</H5>
+<H6>H6 Lorem ipsum</H6>
+<p>P Lorem ipsum</p>
+<p strong>P strong Lorem ipsum</p>
+<article>ARTICLE Lorem ipsum</article>
+<H6 capitalize>Lorem ipsum</H6>
+<H6 accent>Lorem ipsum</H6>
+        
+        </code></pre>
+
+    </main>
+
+    <footer style="margin-top: 100px;" class="accent">
+        <br>
+        <div container>
+            <H4>Wavecom</H4><br>
+            <p>By Dorobantu Marius-Alexandru</p><br><br>
+        </div>
+        <span container actions>
+            <a btn href="https://github.com/Amarius1" class="raised"><i>build</i>Github</a>
+            <a btn href="https://jquery.com/" class="raised">Jquery</a>
+        </span>
+    </footer>
+    <section drawer>
+        <div class='overflow'>
+            <header>
+                <H5>Wavecom</H5>
+                <label>A material design framework</label>
+            </header>
+            <a accordion class="ripple">Documentation<i icon>expand_more</i></a>
+            <ul content>
+                <a btn>Semantic</a>
+                <a btn>Material design</a>
+                <a btn>Modular</a>
+                <a btn>Responsive</a>
+            </ul>
+            <ul class="divider">
+                <a href="index.html" btn><i icon>web_asset</i>Welcome</a>
+                <a href="about.html" btn><i icon>account_circle</i>About</a>
+                <a href="contact.html" btn><i icon>mail</i>Contact us</a>
+                <label>Components</label>
+                <a href="typography.html" btn class="active">Typography</a>
+                <a href="buttons.html" btn>Buttons</a>
+                <a href="cards.html" btn>Cards</a>
+                <a href="tabs.html" btn>Tabs</a>
+                <a href="forms.html" btn>Forms</a>
+                <a href="bar.html" btn>Navbars</a>
+                <a href="datatables.html" btn>Datatables</a>
+                <label>Examples</label>
+                <a href="flux.html" btn><i>smartphone</i>FluxOS</a>
+                <a href="med.html" btn><i>accessible</i>MedX</a>
+
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="wavecom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="rainbow-custom.min.js"></script>
+
+
+    <script>
+        AOS.init();
+    </script>
 
 
 </body>
