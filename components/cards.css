@@ -84,7 +84,7 @@
     padding: 7px 12px !important;
 }
 
-[card] label
+[card] > label
 {
     z-index: 1;
     position: absolute;

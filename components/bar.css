@@ -56,7 +56,7 @@
 
 [bar].fixed {
     position: sticky;
-    top: 0px;
+    top: -1px;
 }
 
 [bar] * {
