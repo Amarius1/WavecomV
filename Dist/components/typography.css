@@ -1,0 +1,149 @@
+body {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgba(40, 40, 40, 1);
+}
+
+H1 {
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    margin: 1px;
+    text-overflow: ellipsis;
+}
+
+H2 {
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    margin: 1px;
+    text-overflow: ellipsis;
+}
+
+H3 {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin: 1px;
+    text-overflow: ellipsis;
+}
+
+H4 {
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    margin: 1px;
+    text-overflow: ellipsis;
+}
+
+H5 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin: 1px;
+}
+
+H6 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    margin: 1px;
+    display: block;
+}
+
+p {
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.15px;
+    margin: 3px;
+   
+}
+
+p[strong] {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    margin: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     white-space: nowrap;
+}
+
+article {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.08px;
+    margin: 1px;
+}
+br {display:block}
+[accent] {
+    color: var(--accent);
+}
+
+[capitalize] {
+    text-transform: uppercase;
+}
+
+[tooltip] {
+
+    position: relative;
+    cursor: help;
+}
+
+[tooltip]:hover::before {
+    content: attr(tooltip);
+    position: absolute;
+    bottom: -24px;
+    display: inline-block;
+    padding: 4.0px 8px;
+    border-radius: 4px;
+    background-color: rgba(110, 110, 110, 0.97);
+    color: white;
+    font-family: sans-serif;
+    white-space: nowrap;
+    text-transform: none;
+    font-size: 14px;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+ text-shadow: 0px 0px 2px rgba(255,255,255,0.3) ;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    animation: tooltip 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    transition: all 0.2s;
+    animation-delay: 0.4s;
+    z-index: 999;
+}
+
+
+
+@keyframes tooltip {
+    0% {
+    
+        opacity: 0;
+        display: none;
+        padding: 2px;
+    }
+
+    1% {
+        opacity: 0;
+        display: inline-block;
+        padding: 0px;
+    }
+
+    50% {
+        opacity: 0;
+        padding: 3px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+::selection
+{
+    background-color: rgba(10,10,130,0.05);
+}
+

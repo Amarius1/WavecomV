@@ -1,0 +1,498 @@
+
+.switch {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.switch input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 20px;
+  opacity: 0;
+  z-index: 0;
+}
+.switch label {
+  display: block;
+  padding: 0 0 0 44px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  font-size: 1rem;
+  line-height: 1.65rem;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.switch label:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 36px;
+  height: 14px;
+  background-color: rgba(0, 0, 0, 0.26);
+  border-radius: 14px;
+  z-index: 1;
+  transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.switch label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  z-index: 2;
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-property: left, background-color;
+}
+.switch input:checked + .thumb:before {
+  background-color: var(--switch-bar);
+}
+.switch input:checked + .thumb:after {
+  left: 16px;
+  background-color: var(--switch);
+}
+.switch input:checked + .thumb.contained:after {
+  left: 18px;
+  background-color: var(--switch);
+}
+.switch label.contained
+{
+  line-height: 30px;
+}
+.switch label.contained:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 38px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.26);
+  border-radius: 40px;
+  z-index: 1;
+  transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.switch label.contained:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 3px 1px -2px rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.07);
+  z-index: 2;
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-property: left, background-color;
+}
+
+
+
+
+
+
+input[type=checkbox].checkbox {
+  width: 0.94em;
+  height: 0.94em;
+    font-size: 1.55em !important;
+  font: inherit;
+  margin: 4px;
+   outline: 0;
+     cursor: pointer;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: var(--light);
+  border-radius: 0.125em;
+  box-sizing: border-box;
+  border: 0.116em solid rgba(170,170,170,1);
+  box-shadow: inset 0 0 0 0 var(--accent);
+  position: relative;
+  transition: box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1), border-color 0s linear 0.17s, -webkit-transform 0.1s cubic-bezier(0.2, 0.3, 0, 1);
+  transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1), box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1), border-color 0s linear 0.17s;
+  transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1), box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1), border-color 0s linear 0.17s, -webkit-transform 0.3s cubic-bezier(0.2, 0.3, 0, 1);
+}
+input[type=checkbox]:focus {
+  outline: none !important;
+}
+input[type=checkbox]:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+input[type=checkbox]:checked,
+input[type=checkbox]:indeterminate {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 0.5em var(--accent);
+  transition: box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1), border-color 0s, -webkit-transform 0.3s cubic-bezier(0.2, 0.3, 0, 1);
+  transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1), box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1), border-color 0s;
+  transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1), box-shadow 0.3s cubic-bezier(0.2, 0.3, 0, 1), border-color 0s, -webkit-transform 0.3s cubic-bezier(0.2, 0.3, 0, 1);
+}
+input[type=checkbox]:before,
+input[type=checkbox]:after {
+  content: '';
+  background: var(--light);
+  height: 0.9em;
+  width: 1.1em;
+  position: absolute;
+  -webkit-transform: translate(0.2728em, 0.4279em) rotate(44.91deg) scale(0.3411, 0.1);
+          transform: translate(0.2788em, 0.5279em) rotate(44.91deg) scale(0.2411, 0.1);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  transition: opacity 0.3s cubic-bezier(0.2, 0.3, 0, 1), -webkit-transform 0.3s cubic-bezier(0.2, 0.3, 0, 1);
+  transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1), opacity 0.3s cubic-bezier(0.2, 0.3, 0, 1);
+  transition: transform 0.3s cubic-bezier(0.2, 0.3, 0, 1), opacity 0.3s cubic-bezier(0.2, 0.3, 0, 1), -webkit-transform 0.3s cubic-bezier(0.2, 0.3, 0, 1);
+  top: -0.165em;
+  left: -0.185em;
+  -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+input[type=checkbox]:after {
+  -webkit-transform: translate(0.8494em, 0.35em) rotate(135.22deg) scale(0.5612, 0.1);
+          transform: translate(0.8494em, 0.35em) rotate(135.22deg) scale(0.5612, 0.1);
+}
+input[type=checkbox]:not(:checked):before {
+  -webkit-transform: translate(0.505em, 0.455em) rotate(44.91deg) scale(0.1, 0.1);
+          transform: translate(0.505em, 0.455em) rotate(44.91deg) scale(0.1, 0.1);
+  /* opacity: 0; */
+}
+input[type=checkbox]:not(:checked):after {
+  -webkit-transform: translate(0.575em, 0.525em) rotate(135.22deg) scale(0.1, 0.1);
+          transform: translate(0.575em, 0.525em) rotate(135.22deg) scale(0.1, 0.1);
+  /* opacity: 0; */
+}
+input[type=checkbox]:indeterminate:before {
+  -webkit-transform: translate(0.23em, 0.45em) rotate(0deg) scale(0.5, 0.1);
+          transform: translate(0.20em, 0.46em) rotate(0deg) scale(0.54, 0.1);
+}
+input[type=checkbox]:indeterminate:after {
+  -webkit-transform: translate(0.78em, 0.55em) rotate(180deg) scale(0.5, 0.1);
+          transform: translate(0.78em, 0.55em) rotate(180deg) scale(0.5, 0.1);
+          opacity: 0;
+}
+input[type=checkbox]:indeterminate:before,
+input[type=checkbox]:indeterminate:after
+{
+  top: -0.145em;
+  left: -0.145em;
+}
+
+
+
+
+
+}
+.radio {
+  margin: 16px 0;
+}
+.radio.radio-inline {
+  display: inline-block;
+}
+.radio input[type="radio"] {
+  display: none;
+}
+.radio input[type="radio"]:checked + label:before {
+  border-color: var(--accent);
+  animation: ripple 0.2s linear forwards;
+}
+.radio input[type="radio"]:checked + label:after {
+  transform: scale(1);
+}
+.radio label {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  padding: 4px 30px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  vertical-align: top;
+  line-height: 1.1rem;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.radio label:before, .radio label:after {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  transition: all .23s ease;
+  transition-property: transform, border-color;
+}
+.radio label:before {
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(140,140,140,1);
+  background-color: var(--light);
+  -webkit-font-smoothing: antialiased;
+}
+.radio label:after {
+  top: 5px;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  	align-items:center;
+  transform: scale(0);
+   text-align: center;
+  background: var(--accent);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.textfield:not(.outlined) {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-top: 12px;
+  min-width: 200px;
+  max-width: 100%;
+  color: #212121;
+  font-weight: 400;
+  background-color: rgba(220,220,220,1);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.textfield:not(.outlined) input,
+.textfield:not(.outlined) label {
+  font-size: 17px;
+  text-align: left;
+  width: 100%;
+  padding: 5px 8px;
+}
+
+.textfield:not(.outlined) input {
+  display: block;
+  margin: 0;
+  outline: 0;
+  border: none;
+  border-bottom: 1.5px solid rgba(140,140,140,1);
+  background: transparent;
+  padding: 10px 8px !important;
+}
+.textfield:not(.outlined) input::selection
+{
+   background: white;
+}
+.textfield:not(.outlined) label {
+  display: block;
+  position: absolute;
+  top: 12px;
+  bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+  color: rgba(70,70,70,1);
+}
+
+.textfield:not(.outlined) label:after {
+  visibility: hidden;
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+  background-color: var(--accent);
+  width: 10px;
+  height: 2px;
+  content: '';
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textfield:not(.outlined) label {
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textfield:not(.outlined) input:focus + label,
+.textfield:not(.outlined) input:valid + label {
+  visibility: visible;
+  top: 0;
+  font-size: 13px;
+
+}
+.textfield:not(.outlined) input:focus + label {
+  color: var(--accent);
+}
+.textfield:not(.outlined) input:focus + label:after {
+  visibility: visible;
+  left: 0;
+  width: 100%;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px rgba(220,220,220,1) inset !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.textfield.outlined {
+
+    position: relative;
+    display: inline-block;
+    padding-top: 6px;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.textfield.outlined > input,
+.textfield.outlined > textarea {
+    box-sizing: border-box;
+    margin: 0;
+    border: solid 1.5px; /* Safari */
+    border-color: rgba(140,140,140,1);
+    border-top-color: transparent;
+    border-radius: 5px;
+    padding: 14px 8px 14px;
+    width: 100%;
+    height: inherit;
+    color: rgba(10,10,10,1);
+    background-color: transparent;
+    box-shadow: none; /* Firefox */
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    transition: border 0.2s, box-shadow 0.2s;
+    font-weight: 400;
+    font-size: 17px;
+    padding-left: 12px;
+}
+
+.textfield.outlined > input + span,
+.textfield.outlined > textarea + span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+    color: rgba(140,140,140,1);
+    font-size: 75%;
+    line-height: 15px;
+    cursor: text;
+    font-size: 13px;
+    transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+
+.textfield.outlined > input + span::before,
+.textfield.outlined > input + span::after,
+.textfield.outlined > textarea + span::before,
+.textfield.outlined > textarea + span::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    margin-top: 6px;
+    border-top: solid 1.5px;
+    min-width: 10px;
+    height: 8px;
+    pointer-events: none;
+    box-shadow: inset 0 1.5px transparent;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.textfield.outlined > input + span::before,
+.textfield.outlined > textarea + span::before {
+    margin-right: 4px;
+    border-left: solid 1.5px transparent;
+    border-radius: 5px 0;
+}
+
+.textfield.outlined > input + span::after,
+.textfield.outlined > textarea + span::after {
+    flex-grow: 1;
+    margin-left: 4px;
+    border-right: solid 1.5px transparent;
+    border-radius: 0 5px;
+}
+
+.textfield.outlined > input:not(:focus):placeholder-shown,
+.textfield.outlined > textarea:not(:focus):placeholder-shown {
+    border-top-color: rgba(140,140,140,1);
+}
+
+.textfield.outlined > input:not(:focus):placeholder-shown + span,
+.textfield.outlined > textarea:not(:focus):placeholder-shown + span {
+    font-size: 17px;
+    line-height: 68px;
+    color: rgba(70,70,70,1) !important;
+    font-weight: 400;
+}
+
+.textfield.outlined > input:not(:focus):placeholder-shown + span::before,
+.textfield.outlined > textarea:not(:focus):placeholder-shown + span::before,
+.textfield.outlined > input:not(:focus):placeholder-shown + span::after,
+.textfield.outlined > textarea:not(:focus):placeholder-shown + span::after {
+    border-top-color: transparent;
+}
+
+.textfield.outlined > input:focus,
+.textfield.outlined > textarea:focus {
+    border-color: var(--accent);
+    border-top-color: transparent;
+    outline: none;
+}
+
+.textfield.outlined > input:focus + span,
+.textfield.outlined > textarea:focus + span {
+    color: var(--accent);
+}
+
+
+
+
+/* Faster transition in Safari to fix an issue */
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .textfield.outlined > input,
+        .textfield.outlined > input + span,
+        .textfield.outlined > textarea,
+        .textfield.outlined > textarea + span,
+        .textfield.outlined > input + span::before,
+        .textfield.outlined > input + span::after,
+        .textfield.outlined > textarea + span::before,
+        .textfield.outlined > textarea + span::after {
+            transition-duration: 0.1s;
+        }
+    }
+}

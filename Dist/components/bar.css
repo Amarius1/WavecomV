@@ -1,0 +1,878 @@
+[bar] {
+    padding: 9px 9px;
+    width: 100%;
+    vertical-align: middle;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    user-select: none;
+    z-index: 999999;
+    
+}
+
+[bar].accent {
+    background-color: var(--accent);
+    color: white;
+}
+[bar].accent * {
+    color: white;
+    
+}
+
+[bar].accent [actions] * 
+{
+    color: white !important;
+}
+[bar].accent [icon] {
+    color: white;
+}
+
+[bar].bottom {
+    position: fixed;
+    bottom: 0px !important;
+    left: 0px !important;
+    filter: drop-shadow(0 0 3px rgba(70, 70, 70, 0.4));
+    box-shadow: none;
+   
+   
+}
+[bar].bottom .fab
+{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    filter: drop-shadow(0 0 3px rgba(70, 70, 70, 0.42));
+    padding: 15px 15px !important;
+    color: rgba(60,60,60,1);
+    box-shadow: none !important;
+
+}
+
+
+
+
+
+[bar].fixed {
+    position: sticky;
+    top: -1px;
+}
+
+[bar] * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+[bar] p {
+    margin: -2px !important;
+    vertical-align: sub !important;
+    line-height: 42px !important;
+    font-size: 23px;
+    align-items: stretch;
+    user-select: text !important;
+}
+
+[bar] [actions] {
+    float: right;
+    vertical-align: bottom !important;
+    margin: -1px !important;
+    padding: 0px 0px;
+    font-size: 0px;
+
+}
+[bar] p:after {
+  content: '';
+  width: 2px;
+  height: 10px;
+  font-size: 25px;
+    line-height: 42px;
+    vertical-align: middle !important;
+
+  display: inline-block;
+  background: transparent;
+}
+[bar] .right
+{
+    float: right;
+}
+[bar] [actions] [div][right] {
+    float: right;
+}
+
+[bar]:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[bar].flat
+{
+    box-shadow: none;
+    transition: all 0.2s;
+}
+
+
+[bar] [btn] {
+    line-height: 100%;
+    vertical-align: middle !important;
+}
+
+[btn][icon].raised {
+    background-color: rgba(243, 243, 243, 1);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.18) !important;
+}
+
+[bar] [btn][icon] {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+}
+[bar] [btn][icon].large {
+    margin-top: -2px;
+    margin-bottom: -4px;
+    vertical-align: middle;
+}
+[btn].fill
+{
+   padding-top: 12px !important;
+    margin-top: -8px !important;
+   padding-bottom: 11px !important;
+    margin-bottom: -10.5px !important;
+    border-radius: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    text-transform: capitalize !important;
+    font-size: 15.6px !important;
+    letter-spacing: 1.6px !important;
+    font-weight: 500 !important;
+}
+
+input[type="search"] {
+    padding: 10px 10px;
+    border-radius: var(--corner-radius);
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(244, 244, 244, 1) !important;
+    font-size: 14px !important;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    position: relative !important;
+    top: 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+[bar] input[type="search"].wide {
+    display: block;
+    width: 100%;
+    margin-top: 10px !important;
+    margin: 0px;
+    padding: 12px 10px;
+    border-radius: 3px;
+    font-size: 17px !important;
+
+}
+
+input[type="search"]::-webkit-input-placeholder {
+    color: rgba(128, 128, 128, 1);
+    transition: all 0.2s;
+}
+
+input[type="search"]:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: all 0.2s;
+}
+[bar].inset.bottom 
+{
+    background-color: transparent;
+}
+[bar].inset.bottom .fab 
+{
+   filter: drop-shadow(0 6px 3px rgba(70, 70, 70, 0.01));
+    
+}
+[bar].inset.accent.bottom:before
+{
+  background-color: var(--accent) !important;
+}
+[bar].inset.accent.bottom:before{
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   vertical-align: middle;
+    height: auto;
+  background-color: var(--accent);
+  box-shadow: none !important;
+    filter: none !important;
+  clip-path: polygon(0 0, 
+    calc(50% - 38px) 0, 
+    calc(50% - 37.487665px) 0.628287px, 
+    calc(50% - 36.975331px) 1.256382px, 
+    calc(50% - 36.462997px) 1.884094px, 
+    calc(50% - 35.912306px) 2.511233px, 
+    calc(50% - 35.863009px) 3.137607px, 
+    calc(50% - 35.802788px) 3.763025px, 
+    calc(50% - 35.731661px) 4.387296px, 
+    calc(50% - 35.64965px) 5.010232px, 
+    calc(50% - 35.55678px) 5.631641px, 
+    calc(50% - 35.453079px) 6.251334px, 
+    calc(50% - 35.338579px) 6.869124px, 
+    calc(50% - 35.213314px) 7.484821px, 
+    calc(50% - 35.077322px) 8.098238px, 
+    calc(50% - 34.930646px) 8.709188px, 
+    calc(50% - 34.77333px) 9.317486px, 
+    calc(50% - 34.605421px) 9.922945px, 
+    calc(50% - 34.426971px) 10.525381px, 
+    calc(50% - 34.238035px) 11.124612px, 
+    calc(50% - 34.038669px) 11.720454px, 
+    calc(50% - 33.828934px) 12.312725px, 
+    calc(50% - 33.608895px) 12.901246px, 
+    calc(50% - 33.378619px) 13.485837px, 
+    calc(50% - 33.138175px) 14.066321px, 
+    calc(50% - 32.887636px) 14.642519px, 
+    calc(50% - 32.62708px) 15.214257px, 
+    calc(50% - 32.356586px) 15.781361px, 
+    calc(50% - 32.076235px) 16.343658px, 
+    calc(50% - 31.786113px) 16.900976px, 
+    calc(50% - 31.486309px) 17.453146px, 
+    calc(50% - 31.176915px) 18px, 
+    calc(50% - 30.858023px) 18.541371px, 
+    calc(50% - 30.529731px) 19.077094px, 
+    calc(50% - 30.19214px) 19.607005px, 
+    calc(50% - 29.845353px) 20.130945px, 
+    calc(50% - 29.489474px) 20.648752px, 
+    calc(50% - 29.124612px) 21.160269px, 
+    calc(50% - 28.750878px) 21.665341px, 
+    calc(50% - 28.368387px) 22.163813px, 
+    calc(50% - 27.977255px) 22.655534px, 
+    calc(50% - 27.5776px) 23.140354px, 
+    calc(50% - 27.169545px) 23.618125px, 
+    calc(50% - 26.753214px) 24.088702px, 
+    calc(50% - 26.328733px) 24.551941px, 
+    calc(50% - 25.896233px) 25.007701px, 
+    calc(50% - 25.455844px) 25.455844px, 
+    calc(50% - 25.007701px) 25.896233px, 
+    calc(50% - 24.551941px) 26.328733px, 
+    calc(50% - 24.088702px) 26.753214px, 
+    calc(50% - 23.618125px) 27.169545px, 
+    calc(50% - 23.140354px) 27.5776px, 
+    calc(50% - 22.655534px) 27.977255px, 
+    calc(50% - 22.163813px) 28.368387px, 
+    calc(50% - 21.665341px) 28.750878px, 
+    calc(50% - 21.160269px) 29.124612px, 
+    calc(50% - 20.648752px) 29.489474px, 
+    calc(50% - 20.130945px) 29.845353px, 
+    calc(50% - 19.607005px) 30.19214px, 
+    calc(50% - 19.077094px) 30.529731px, 
+    calc(50% - 18.541371px) 30.858023px, 
+    calc(50% - 18px) 31.176915px, 
+    calc(50% - 17.453146px) 31.486309px, 
+    calc(50% - 16.900976px) 31.786113px, 
+    calc(50% - 16.343658px) 32.076235px, 
+    calc(50% - 15.781361px) 32.356586px, 
+    calc(50% - 15.214257px) 32.62708px, 
+    calc(50% - 14.642519px) 32.887636px, 
+    calc(50% - 14.066321px) 33.138175px, 
+    calc(50% - 13.485837px) 33.378619px, 
+    calc(50% - 12.901246px) 33.608895px, 
+    calc(50% - 12.312725px) 33.828934px, 
+    calc(50% - 11.720454px) 34.038669px, 
+    calc(50% - 11.124612px) 34.238035px, 
+    calc(50% - 10.525381px) 34.426971px, 
+    calc(50% - 9.922945px) 34.605421px, 
+    calc(50% - 9.317486px) 34.77333px, 
+    calc(50% - 8.709188px) 34.930646px, 
+    calc(50% - 8.098238px) 35.077322px, 
+    calc(50% - 7.484821px) 35.213314px, 
+    calc(50% - 6.869124px) 35.338579px, 
+    calc(50% - 6.251334px) 35.453079px, 
+    calc(50% - 5.631641px) 35.55678px, 
+    calc(50% - 5.010232px) 35.64965px, 
+    calc(50% - 4.387296px) 35.731661px, 
+    calc(50% - 3.763025px) 35.802788px, 
+    calc(50% - 3.137607px) 35.863009px, 
+    calc(50% - 2.511233px) 35.912306px, 
+    calc(50% - 1.884094px) 35.950663px, 
+    calc(50% - 1.256382px) 35.97807px, 
+    calc(50% - 0.628287px) 35.994517px, 
+    50% 36px, 
+    calc(50% + 0.628287px) 35.994517px, 
+    calc(50% + 1.256382px) 35.97807px, 
+    calc(50% + 1.884094px) 35.950663px, 
+    calc(50% + 2.511233px) 35.912306px, 
+    calc(50% + 3.137607px) 35.863009px, 
+    calc(50% + 3.763025px) 35.802788px, 
+    calc(50% + 4.387296px) 35.731661px, 
+    calc(50% + 5.010232px) 35.64965px, 
+    calc(50% + 5.631641px) 35.55678px, 
+    calc(50% + 6.251334px) 35.453079px, 
+    calc(50% + 6.869124px) 35.338579px, 
+    calc(50% + 7.484821px) 35.213314px, 
+    calc(50% + 8.098238px) 35.077322px, 
+    calc(50% + 8.709188px) 34.930646px, 
+    calc(50% + 9.317486px) 34.77333px, 
+    calc(50% + 9.922945px) 34.605421px, 
+    calc(50% + 10.525381px) 34.426971px, 
+    calc(50% + 11.124612px) 34.238035px, 
+    calc(50% + 11.720454px) 34.038669px, 
+    calc(50% + 12.312725px) 33.828934px, 
+    calc(50% + 12.901246px) 33.608895px, 
+    calc(50% + 13.485837px) 33.378619px, 
+    calc(50% + 14.066321px) 33.138175px, 
+    calc(50% + 14.642519px) 32.887636px, 
+    calc(50% + 15.214257px) 32.62708px, 
+    calc(50% + 15.781361px) 32.356586px, 
+    calc(50% + 16.343658px) 32.076235px, 
+    calc(50% + 16.900976px) 31.786113px, 
+    calc(50% + 17.453146px) 31.486309px, 
+    calc(50% + 18px) 31.176915px, 
+    calc(50% + 18.541371px) 30.858023px, 
+    calc(50% + 19.077094px) 30.529731px, 
+    calc(50% + 19.607005px) 30.19214px, 
+    calc(50% + 20.130945px) 29.845353px, 
+    calc(50% + 20.648752px) 29.489474px, 
+    calc(50% + 21.160269px) 29.124612px, 
+    calc(50% + 21.665341px) 28.750878px, 
+    calc(50% + 22.163813px) 28.368387px, 
+    calc(50% + 22.655534px) 27.977255px, 
+    calc(50% + 23.140354px) 27.5776px, 
+    calc(50% + 23.618125px) 27.169545px, 
+    calc(50% + 24.088702px) 26.753214px, 
+    calc(50% + 24.551941px) 26.328733px, 
+    calc(50% + 25.007701px) 25.896233px, 
+    calc(50% + 25.455844px) 25.455844px, 
+    calc(50% + 25.896233px) 25.007701px, 
+    calc(50% + 26.328733px) 24.551941px, 
+    calc(50% + 26.753214px) 24.088702px, 
+    calc(50% + 27.169545px) 23.618125px, 
+    calc(50% + 27.5776px) 23.140354px, 
+    calc(50% + 27.977255px) 22.655534px, 
+    calc(50% + 28.368387px) 22.163813px, 
+    calc(50% + 28.750878px) 21.665341px, 
+    calc(50% + 29.124612px) 21.160269px, 
+    calc(50% + 29.489474px) 20.648752px, 
+    calc(50% + 29.845353px) 20.130945px, 
+    calc(50% + 30.19214px) 19.607005px, 
+    calc(50% + 30.529731px) 19.077094px, 
+    calc(50% + 30.858023px) 18.541371px, 
+    calc(50% + 31.176915px) 18px, 
+    calc(50% + 31.486309px) 17.453146px, 
+    calc(50% + 31.786113px) 16.900976px, 
+    calc(50% + 32.076235px) 16.343658px, 
+    calc(50% + 32.356586px) 15.781361px, 
+    calc(50% + 32.62708px) 15.214257px, 
+    calc(50% + 32.887636px) 14.642519px, 
+    calc(50% + 33.138175px) 14.066321px, 
+    calc(50% + 33.378619px) 13.485837px, 
+    calc(50% + 33.608895px) 12.901246px, 
+    calc(50% + 33.828934px) 12.312725px, 
+    calc(50% + 34.038669px) 11.720454px, 
+    calc(50% + 34.238035px) 11.124612px, 
+    calc(50% + 34.426971px) 10.525381px, 
+    calc(50% + 34.605421px) 9.922945px, 
+    calc(50% + 34.77333px) 9.317486px, 
+    calc(50% + 34.930646px) 8.709188px, 
+    calc(50% + 35.077322px) 8.098238px, 
+    calc(50% + 35.213314px) 7.484821px, 
+    calc(50% + 35.338579px) 6.869124px, 
+    calc(50% + 35.453079px) 6.251334px, 
+    calc(50% + 35.55678px) 5.631641px, 
+    calc(50% + 35.64965px) 5.010232px, 
+    calc(50% + 35.731661px) 4.387296px, 
+    calc(50% + 35.802788px) 3.763025px, 
+    calc(50% + 35.863009px) 3.137607px, 
+    calc(50% + 35.912306px) 2.511233px, 
+    calc(50% + 36.462997px) 1.884094px, 
+    calc(50% + 36.975331px) 1.256382px, 
+    calc(50% + 37.487665px) 0.628287px, 
+    calc(50% + 38px) 0, 
+    100% 0, 
+    100% 100%, 
+    0 100%);
+}
+[bar] [accordion]
+{
+    display: inline-block !important;
+}
+
+[bar].inset.bottom:before{
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   vertical-align: middle;
+    height: auto;
+  background-color: white;
+  box-shadow: none !important;
+    filter: none !important;
+  clip-path: polygon(0 0, 
+    calc(50% - 38px) 0, 
+    calc(50% - 37.487665px) 0.628287px, 
+    calc(50% - 36.975331px) 1.256382px, 
+    calc(50% - 36.462997px) 1.884094px, 
+    calc(50% - 35.912306px) 2.511233px, 
+    calc(50% - 35.863009px) 3.137607px, 
+    calc(50% - 35.802788px) 3.763025px, 
+    calc(50% - 35.731661px) 4.387296px, 
+    calc(50% - 35.64965px) 5.010232px, 
+    calc(50% - 35.55678px) 5.631641px, 
+    calc(50% - 35.453079px) 6.251334px, 
+    calc(50% - 35.338579px) 6.869124px, 
+    calc(50% - 35.213314px) 7.484821px, 
+    calc(50% - 35.077322px) 8.098238px, 
+    calc(50% - 34.930646px) 8.709188px, 
+    calc(50% - 34.77333px) 9.317486px, 
+    calc(50% - 34.605421px) 9.922945px, 
+    calc(50% - 34.426971px) 10.525381px, 
+    calc(50% - 34.238035px) 11.124612px, 
+    calc(50% - 34.038669px) 11.720454px, 
+    calc(50% - 33.828934px) 12.312725px, 
+    calc(50% - 33.608895px) 12.901246px, 
+    calc(50% - 33.378619px) 13.485837px, 
+    calc(50% - 33.138175px) 14.066321px, 
+    calc(50% - 32.887636px) 14.642519px, 
+    calc(50% - 32.62708px) 15.214257px, 
+    calc(50% - 32.356586px) 15.781361px, 
+    calc(50% - 32.076235px) 16.343658px, 
+    calc(50% - 31.786113px) 16.900976px, 
+    calc(50% - 31.486309px) 17.453146px, 
+    calc(50% - 31.176915px) 18px, 
+    calc(50% - 30.858023px) 18.541371px, 
+    calc(50% - 30.529731px) 19.077094px, 
+    calc(50% - 30.19214px) 19.607005px, 
+    calc(50% - 29.845353px) 20.130945px, 
+    calc(50% - 29.489474px) 20.648752px, 
+    calc(50% - 29.124612px) 21.160269px, 
+    calc(50% - 28.750878px) 21.665341px, 
+    calc(50% - 28.368387px) 22.163813px, 
+    calc(50% - 27.977255px) 22.655534px, 
+    calc(50% - 27.5776px) 23.140354px, 
+    calc(50% - 27.169545px) 23.618125px, 
+    calc(50% - 26.753214px) 24.088702px, 
+    calc(50% - 26.328733px) 24.551941px, 
+    calc(50% - 25.896233px) 25.007701px, 
+    calc(50% - 25.455844px) 25.455844px, 
+    calc(50% - 25.007701px) 25.896233px, 
+    calc(50% - 24.551941px) 26.328733px, 
+    calc(50% - 24.088702px) 26.753214px, 
+    calc(50% - 23.618125px) 27.169545px, 
+    calc(50% - 23.140354px) 27.5776px, 
+    calc(50% - 22.655534px) 27.977255px, 
+    calc(50% - 22.163813px) 28.368387px, 
+    calc(50% - 21.665341px) 28.750878px, 
+    calc(50% - 21.160269px) 29.124612px, 
+    calc(50% - 20.648752px) 29.489474px, 
+    calc(50% - 20.130945px) 29.845353px, 
+    calc(50% - 19.607005px) 30.19214px, 
+    calc(50% - 19.077094px) 30.529731px, 
+    calc(50% - 18.541371px) 30.858023px, 
+    calc(50% - 18px) 31.176915px, 
+    calc(50% - 17.453146px) 31.486309px, 
+    calc(50% - 16.900976px) 31.786113px, 
+    calc(50% - 16.343658px) 32.076235px, 
+    calc(50% - 15.781361px) 32.356586px, 
+    calc(50% - 15.214257px) 32.62708px, 
+    calc(50% - 14.642519px) 32.887636px, 
+    calc(50% - 14.066321px) 33.138175px, 
+    calc(50% - 13.485837px) 33.378619px, 
+    calc(50% - 12.901246px) 33.608895px, 
+    calc(50% - 12.312725px) 33.828934px, 
+    calc(50% - 11.720454px) 34.038669px, 
+    calc(50% - 11.124612px) 34.238035px, 
+    calc(50% - 10.525381px) 34.426971px, 
+    calc(50% - 9.922945px) 34.605421px, 
+    calc(50% - 9.317486px) 34.77333px, 
+    calc(50% - 8.709188px) 34.930646px, 
+    calc(50% - 8.098238px) 35.077322px, 
+    calc(50% - 7.484821px) 35.213314px, 
+    calc(50% - 6.869124px) 35.338579px, 
+    calc(50% - 6.251334px) 35.453079px, 
+    calc(50% - 5.631641px) 35.55678px, 
+    calc(50% - 5.010232px) 35.64965px, 
+    calc(50% - 4.387296px) 35.731661px, 
+    calc(50% - 3.763025px) 35.802788px, 
+    calc(50% - 3.137607px) 35.863009px, 
+    calc(50% - 2.511233px) 35.912306px, 
+    calc(50% - 1.884094px) 35.950663px, 
+    calc(50% - 1.256382px) 35.97807px, 
+    calc(50% - 0.628287px) 35.994517px, 
+    50% 36px, 
+    calc(50% + 0.628287px) 35.994517px, 
+    calc(50% + 1.256382px) 35.97807px, 
+    calc(50% + 1.884094px) 35.950663px, 
+    calc(50% + 2.511233px) 35.912306px, 
+    calc(50% + 3.137607px) 35.863009px, 
+    calc(50% + 3.763025px) 35.802788px, 
+    calc(50% + 4.387296px) 35.731661px, 
+    calc(50% + 5.010232px) 35.64965px, 
+    calc(50% + 5.631641px) 35.55678px, 
+    calc(50% + 6.251334px) 35.453079px, 
+    calc(50% + 6.869124px) 35.338579px, 
+    calc(50% + 7.484821px) 35.213314px, 
+    calc(50% + 8.098238px) 35.077322px, 
+    calc(50% + 8.709188px) 34.930646px, 
+    calc(50% + 9.317486px) 34.77333px, 
+    calc(50% + 9.922945px) 34.605421px, 
+    calc(50% + 10.525381px) 34.426971px, 
+    calc(50% + 11.124612px) 34.238035px, 
+    calc(50% + 11.720454px) 34.038669px, 
+    calc(50% + 12.312725px) 33.828934px, 
+    calc(50% + 12.901246px) 33.608895px, 
+    calc(50% + 13.485837px) 33.378619px, 
+    calc(50% + 14.066321px) 33.138175px, 
+    calc(50% + 14.642519px) 32.887636px, 
+    calc(50% + 15.214257px) 32.62708px, 
+    calc(50% + 15.781361px) 32.356586px, 
+    calc(50% + 16.343658px) 32.076235px, 
+    calc(50% + 16.900976px) 31.786113px, 
+    calc(50% + 17.453146px) 31.486309px, 
+    calc(50% + 18px) 31.176915px, 
+    calc(50% + 18.541371px) 30.858023px, 
+    calc(50% + 19.077094px) 30.529731px, 
+    calc(50% + 19.607005px) 30.19214px, 
+    calc(50% + 20.130945px) 29.845353px, 
+    calc(50% + 20.648752px) 29.489474px, 
+    calc(50% + 21.160269px) 29.124612px, 
+    calc(50% + 21.665341px) 28.750878px, 
+    calc(50% + 22.163813px) 28.368387px, 
+    calc(50% + 22.655534px) 27.977255px, 
+    calc(50% + 23.140354px) 27.5776px, 
+    calc(50% + 23.618125px) 27.169545px, 
+    calc(50% + 24.088702px) 26.753214px, 
+    calc(50% + 24.551941px) 26.328733px, 
+    calc(50% + 25.007701px) 25.896233px, 
+    calc(50% + 25.455844px) 25.455844px, 
+    calc(50% + 25.896233px) 25.007701px, 
+    calc(50% + 26.328733px) 24.551941px, 
+    calc(50% + 26.753214px) 24.088702px, 
+    calc(50% + 27.169545px) 23.618125px, 
+    calc(50% + 27.5776px) 23.140354px, 
+    calc(50% + 27.977255px) 22.655534px, 
+    calc(50% + 28.368387px) 22.163813px, 
+    calc(50% + 28.750878px) 21.665341px, 
+    calc(50% + 29.124612px) 21.160269px, 
+    calc(50% + 29.489474px) 20.648752px, 
+    calc(50% + 29.845353px) 20.130945px, 
+    calc(50% + 30.19214px) 19.607005px, 
+    calc(50% + 30.529731px) 19.077094px, 
+    calc(50% + 30.858023px) 18.541371px, 
+    calc(50% + 31.176915px) 18px, 
+    calc(50% + 31.486309px) 17.453146px, 
+    calc(50% + 31.786113px) 16.900976px, 
+    calc(50% + 32.076235px) 16.343658px, 
+    calc(50% + 32.356586px) 15.781361px, 
+    calc(50% + 32.62708px) 15.214257px, 
+    calc(50% + 32.887636px) 14.642519px, 
+    calc(50% + 33.138175px) 14.066321px, 
+    calc(50% + 33.378619px) 13.485837px, 
+    calc(50% + 33.608895px) 12.901246px, 
+    calc(50% + 33.828934px) 12.312725px, 
+    calc(50% + 34.038669px) 11.720454px, 
+    calc(50% + 34.238035px) 11.124612px, 
+    calc(50% + 34.426971px) 10.525381px, 
+    calc(50% + 34.605421px) 9.922945px, 
+    calc(50% + 34.77333px) 9.317486px, 
+    calc(50% + 34.930646px) 8.709188px, 
+    calc(50% + 35.077322px) 8.098238px, 
+    calc(50% + 35.213314px) 7.484821px, 
+    calc(50% + 35.338579px) 6.869124px, 
+    calc(50% + 35.453079px) 6.251334px, 
+    calc(50% + 35.55678px) 5.631641px, 
+    calc(50% + 35.64965px) 5.010232px, 
+    calc(50% + 35.731661px) 4.387296px, 
+    calc(50% + 35.802788px) 3.763025px, 
+    calc(50% + 35.863009px) 3.137607px, 
+    calc(50% + 35.912306px) 2.511233px, 
+    calc(50% + 36.462997px) 1.884094px, 
+    calc(50% + 36.975331px) 1.256382px, 
+    calc(50% + 37.487665px) 0.628287px, 
+    calc(50% + 38px) 0, 
+    100% 0, 
+    100% 100%, 
+    0 100%);
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    [drawer] .label {
+
+        width: 25px !important;
+        right: -25px !important;
+
+    }
+}
+
+.drawer_bg {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999990;
+    opacity: 0.001;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    visibility: hidden;
+}
+
+[drawer] {
+    max-width: 320px;
+    width: 75%;
+    height: 100%;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    display: block;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    background: white;
+    position: fixed;
+    z-index: 5;
+    opacity: 0.001;
+    -webkit-box-shadow: 3px 0 16px -3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 3px 0 16px -3px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 3px 0 16px -3px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 3px 0 16px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 0 16px -3px rgba(0, 0, 0, 0.4);
+    z-index: 9999999;
+}
+
+[drawer] .antiSelect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+}
+
+[drawer] header > a,
+[drawer] header > article,
+[drawer] header > H1,
+[drawer] header > H2,
+[drawer] header > H3,
+[drawer] header > H4,
+[drawer] header > H5,
+[drawer] header > H6,
+[drawer] header > sub,
+[drawer] header > p,
+[drawer] header > label {
+    padding: 0px 14px;
+}
+
+[drawer] header {
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: var(--light);
+    z-index: 999;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+    /*padding: 0px 14px;*/
+}
+
+[drawer] header > :first-child:not(img) {
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+
+[drawer] header > H5,
+[drawer] header > H4,
+[drawer] header > H3,
+[drawer] header > H2,
+[drawer] header > H1,
+[drawer] header > H6,
+[drawer] header > p {
+    font-weight: 410;
+    margin: 0 !important;
+
+}
+
+[drawer] header > img.profile {
+    width: 60px;
+    border-radius: 50px;
+}
+
+[drawer] H1,
+[drawer] H2,
+[drawer] H3,
+[drawer] H4,
+[drawer] H5,
+[drawer] H6 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+[drawer] header > img {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.10) !important;
+}
+
+[drawer] header > label {
+    margin-top: -2px;
+    margin-bottom: -2px;
+    color: rgba(80, 80, 80, 1);
+}
+
+[drawer] header H5 + label {
+    position: relative;
+    top: -8px;
+}
+
+[drawer] ul {
+    margin: 0px !important;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+
+
+}
+
+ul [btn] {
+    width: 100%;
+    text-transform: capitalize !important;
+    padding: 12px 12px !important;
+    font-weight: 500 !important;
+    font-size: 15.8px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+
+}
+
+ul [btn] [icon] {
+    font-size: 25px;
+    margin-top: -3px;
+    margin-right: 14px;
+    margin-left: -4px;
+    color: rgba(60, 60, 60, 1);
+}
+
+[drawer] ul [btn].active {
+    background-color: rgba(1, 1, 1, 0.1) !important;
+    color: var(--accent) !important;
+}
+
+[drawer] ul [btn].active [icon] {
+    color: var(--accent) !important;
+}
+
+[btn].active [icon] {
+    font-family: 'Material Icons';
+}
+
+[btn].active .waves-ripple {
+    background-color: var(--accent-ripple);
+}
+
+[drawer] .label {
+    position: fixed;
+    top: 0px;
+    width: 8px;
+    right: -8px;
+    height: 100%;
+
+}
+
+[drawer] > div::-webkit-scrollbar {
+    width: 3px;
+}
+
+[drawer] > div::-webkit-scrollbar * {
+    background: transparent;
+}
+
+[drawer] > div::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+[drawer] ul [btn].active {
+    background-color: rgba(1, 1, 1, 0.1) !important;
+    color: var(--accent) !important;
+}
+
+[drawer] ul [btn].active [icon] {
+    color: var(--accent) !important;
+}
+[drawer] .label {
+    position: fixed;
+    top: 0px;
+    width: 8px;
+    right: -8px;
+    height: 100%;
+
+}
+
+[drawer] > div::-webkit-scrollbar {
+    width: 3px !important;
+}
+
+[drawer] > div::-webkit-scrollbar * {
+    background: transparent;
+}
+
+[drawer] > div::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+.overflow {
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+}
+ul [btn] {
+    width: 100%;
+    text-transform: capitalize !important;
+    padding: 12px 12px !important;
+    font-weight: 500 !important;
+    font-size: 15.8px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+
+}
+
+ul [btn] [icon] {
+    font-size: 25px;
+    margin-top: -3px;
+    margin-right: 14px;
+    margin-left: -4px;
+    color: rgba(60, 60, 60, 1);
+}
+[bar] header[tabs]
+{
+    display: block; width: 100%;
+}
+[bar] header[tabs] a 
+{
+    display: inline-block !important;
+}
+[bar] header[tabs]:last-child 
+{
+    margin-bottom: -9px;
+}
