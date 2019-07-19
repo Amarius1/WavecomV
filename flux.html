@@ -1,0 +1,242 @@
+<html>
+
+<head>
+    <title>FluxOS</title>
+    <link href="https://amarius1.github.io/WavecomV/wavecom.css" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        [bar][oof] {
+            background-color: transparent;
+        }
+
+        [bar][oof] * {
+            color: white !important;
+        }
+
+        [bar][oof].depth-1 {
+            background-color: rgba(1, 1, 20, 0.6);
+        }
+
+        .white {
+            color: white !important;
+        }
+
+        .montser {
+            font-family: 'Montserrat', sans-serif !important;
+            letter-spacing: -2px;
+        }
+
+        :root {
+            --accent: rgba(230, 0, 0, 1);
+            --accent-soft: rgba(14, 0, 255, 0.08);
+            --accent-ripple: rgba(12, 36, 255, 0.2);
+
+            --accent-hover-darken: rgba(0, 110, 255, 1);
+            --card-bkg: white;
+            --accent-link: rgba(50, 0, 255, 1);
+            --corner-radius: 5px;
+            --tab-width: 150px;
+            --switch: rgba(60, 0, 265, 1);
+            --switch-bar: rgba(50, 10, 240, 0.25);
+            --light: white;
+            --mark: rgba(10, 0, 255, 0.2);
+            --fab-accent: rgba(2, 2, 2, 1);
+        }
+
+        [abstract1] {
+            height: 200px;
+            width: 200px;
+            display: block;
+            border-radius: 100%;
+            background-color: rgba(255, 0, 0, 0.3);
+        }
+
+        .invisible {
+            opacity: 0;
+            transition: all 0.2s;
+        }
+
+        .invisible.depth-1 {
+            opacity: 1 !important;
+            transition: all 0.2s;
+        }
+
+        divider {
+            display: block;
+            position: relative;
+            width: 90%;
+            height: 2px;
+            background-color: rgba(230, 1, 1, 1);
+            border-radius: 10px;
+            margin-left: 5%;
+        }
+
+        [card] {
+            background-color: rgba(1, 1, 1, 0.5);
+            color: white;
+            border-radius: 0px !important;
+            overflow-y: hidden;
+            margin: 0px !important;
+        }
+
+        [accent] {
+            color: var(--accent) !important;
+        }
+
+        [list][card] {
+            width: 25%;
+        }
+
+        [center][oof] * {
+            text-align: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .waves-ripple {
+            background-color: rgba(255, 1, 1, 0.4) !important;
+        }
+
+        .filled {
+            background-color: rgba(255, 1, 1, 0.1) !important;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('bkg.png');  background-repeat: no-repeat; background-size: 100%; overflow-x: hidden;">
+    <section oof bar class="flat fixed invisible">
+        <p>FluxOS</p>
+        <span actions>
+            <a btn class="raised accent">Contact</a>
+
+            
+
+        </span>
+    </section>
+    <section style="margin-top: -60px;" center>
+        <img data-aos="fade-down" src="https://lh3.googleusercontent.com/34hoSd3zx9lPLnzBWO07kmxAtGmLqIgJ1nldqkr4r5_41npn3_DdnNgZRSTeI2wuG96X">
+
+
+        <H2 data-aos="fade-up" style="margin-top:-40px; font-weight: 100 !important;" center class="white montser">Meet <span style="font-weight: 700; margin-left: -4px; font-size: 84px;" accent>Flux</span></H2>
+        <p data-aos="fade-left" data-aos-anchor-placement="top-bottom" center capitalize style="color: rgba(255,255,255,0.5); margin-top: -16px;">Scroll for more</p>
+
+
+        <div data-aos="fade-down-left" style="position: absolute; right: 0px; top: 0px;" abstract1></div>
+        <div data-aos="fade-left" style="position: absolute; right: 20px; top: 20px;" abstract1></div>
+        <div data-aos="fade-left" style="position: absolute; right: 0px; top: 60px; width: 300px; height: 300px;" abstract1></div>
+        <div data-aos="fade-up-left" style="position: absolute; right: 0px; top: 240px;" abstract1></div>
+        <div data-aos="fade-down-left" style="position: absolute; right: -60px; top: -60px; width: 300px; height: 300px;" abstract1></div>
+        <div data-aos="fade-down-right" style="position: absolute; left: 0px; top: 60px; width: 300px; height: 300px;" abstract1></div>
+        <div data-aos="fade-up-right" style="position: absolute; left: -150px; top: 140px; width: 300px; height: 300px;" abstract1></div>
+        <div data-aos="fade-right" style="position: absolute; left: 0px; top: 100px; width: 60px; height: 60px;" abstract1></div>
+        <div data-aos="fade-down-left" style="position: absolute; right: 300px; top: 60px; width: 60px; height: 60px;" abstract1></div>
+        <div data-aos="fade-up-right" style="position: absolute; right: 320px; top: 80px; width: 70px; height: 70px;" abstract1></div>
+    </section>
+    <main container style="margin-top: 240px;">
+        <span data-aos="fade-up" card class="depth-5">
+            <H4 data-aos="fade-left" data-aos-anchor-placement="top-bottom">feel the <span accent>Flux</span></H4>
+            <article data-aos="fade-up" data-aos-anchor-placement="top-bottom">Flux is a fast, open-source, Linux-based operating system designed with speed in mind. You will never miss a thing with its Android app compatibility. Security is the key as you have the choice of removing Google's services in favour of FOSS apps, too.</article>
+        </span>
+        <div style="margin-top: 70px;">
+            <span data-aos="fade-up-right" list card oof center style="padding-top: 20px; min-height: 260px;">
+                <a btn icon style="font-size: 36px; padding-top: 13px !important; padding-bottom: 13px !important;" icon accent>offline_bolt</a>
+                <H4>Fast</H4>
+                <p>FluxOS is built on the latest version of the Linux kernel with the best toolchain optimisations. Every device that runs Flux can reach its full potential.</p>
+            </span><span data-aos="fade-right" list card oof center style="padding-top: 20px; min-height: 260px;">
+                <a btn style="font-size: 36px; padding-top: 13px !important; padding-bottom: 13px !important;" icon accent>lock_open</a>
+                <H4>Open</H4>
+                <p>FluxOS was created by a community eager to escape from corporate dominion over tech. A large open-source app store is waiting for you.</p>
+            </span><span data-aos="fade-left" list card oof center style="padding-top: 20px; min-height: 260px;">
+                <a btn style="font-size: 36px; padding-top: 13px !important; padding-bottom: 13px !important;" icon accent>security</a>
+                <H4>Secure</H4>
+                <p>FluxOS uses its own encrypted file system called Flux. While slightly reducing transfer speeds, every file is automatically encrypted.</p>
+            </span><span data-aos="fade-up-left" list card oof center style="padding-top: 20px; min-height: 260px;">
+                <a btn style="font-size: 36px; padding-top: 13px !important; padding-bottom: 13px !important;" icon accent>apps</a>
+                <H4>Apps</H4>
+                <p>Flux uses a special shell to run android apps securely. You can use the same shell to run Virtual Machines with full virtualization.</p>
+            </span>
+        </div>
+        <span data-aos="fade-up" card class="depth-5" style="margin-top: 70px !important;">
+            <H4 data-aos="fade-left" data-aos-anchor-placement="top-bottom">download the <span accent>Flux</span></H4>
+            <article data-aos="fade-up" data-aos-anchor-placement="top-bottom">Donwload FluxOS for your device<Br></Br>
+                <a btn class="outlined accent filled">Redmi Note 5</a>
+                <a btn class="outlined accent filled">Redmi K20/Mi9T</a>
+                <a btn class="outlined accent filled">Redmi K20Pro/Mi9TPro</a>
+                <a btn class="outlined accent filled">Xiaomi Mi 8</a>
+                <a btn class="outlined accent filled">Xiaomi Mi 9</a>
+                <a btn class="outlined accent filled">Pixel 3</a>
+                <a btn class="outlined accent filled">Pixel 3XL</a>
+                <a btn class="outlined accent filled">Pixel 3a</a>
+                <a btn class="outlined accent filled">Pixel 3aXL</a>
+                <a btn class="outlined accent filled">Galaxy A60</a>
+                <a btn class="outlined accent filled">Galaxy A70</a>
+                <a btn class="outlined accent filled">OnePlus 6</a>
+                <a btn class="outlined accent filled">OnePlus 6T</a>
+                <a btn class="outlined accent filled">OnePlus 7</a>
+                <a btn class="outlined accent filled">OnePlus 7 Pro</a>
+                <a btn class="outlined accent filled">Oppo Reno 10x Zoom</a>
+                <a btn class="outlined accent filled">Zenfone 6/6z</a>
+                <a btn class="outlined accent filled">Xiaomi Mi A3</a>
+                <a btn class="outlined accent filled">Xiaomi Mi A3 Pro</a>
+            </article>
+            <H5 data-aos="fade-left">Officially supported devices:</H5>    
+            <article data-aos="fade-left">These are phones made by use, the Flux company</article><br>
+            <article>
+                <a btn class="outlined accent filled">Flux Carbon 1<i right>photo_size_select_small</i></a>
+                <a btn class="outlined accent filled">Flux Carbon 2<i right>photo_size_select_small</i></a>
+                <a btn class="outlined accent filled">Flux Carbon 2 Max<i right>photo_size_select_large</i></a>
+                <a btn class="outlined accent filled"><i>camera_enhance</i>Flux Diamond 1</a>
+                <a btn class="outlined accent filled"><i>camera_enhance</i>Flux Diamond 2</a>
+                <a btn class="outlined accent filled"><i>assessment</i>Flux Librium</a>
+            </article>
+        </span>
+
+        <Br><br><br><br>
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://amarius1.github.io/WavecomV/wavecom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 20) {
+                $("[bar].flat.fixed").addClass("depth-1");
+            } else {
+                $("[bar].flat.fixed").removeClass("depth-1");
+            }
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+
+</body>
+
+</html>

@@ -54,42 +54,35 @@ document.writeln("<script type='text/javascript' src='components/bar.js'></scrip
 
     var Effect = {
 
-        // Effect delay
         duration:390,
 
         show: function(e, element) {
 
-            // Disable right click
             if (e.button === 2) {
                 return false;
             }
 
             var el = element || this;
 
-            // Create ripple
             var ripple = document.createElement('div');
             ripple.className = 'waves-ripple';
             el.appendChild(ripple);
 
-            // Get click coordinate and element witdh
             var pos         = offset(el);
             var relativeY   = (e.pageY - pos.top);
             var relativeX   = (e.pageX - pos.left);
             var scale       = 'scale('+((el.clientWidth / 102) * 14)+')';
 
-            // Support for touch devices
             if ('touches' in e) {
               relativeY   = (e.touches[0].pageY - pos.top);
               relativeX   = (e.touches[0].pageX - pos.left);
             }
 
-            // Attach data to element
             ripple.setAttribute('data-hold', Date.now());
             ripple.setAttribute('data-scale', scale);
             ripple.setAttribute('data-x', relativeX);
             ripple.setAttribute('data-y', relativeY);
 
-            // Set ripple position
             var rippleStyle = {
                 'top': relativeY+'px',
                 'left': relativeX+'px',
@@ -99,7 +92,6 @@ document.writeln("<script type='text/javascript' src='components/bar.js'></scrip
             ripple.setAttribute('style', convertStyle(rippleStyle));
             ripple.className = ripple.className.replace('waves-notransition', '');
 
-            // Scale the ripple
             rippleStyle['-webkit-transform'] = scale;
             rippleStyle['-moz-transform'] = scale;
             rippleStyle['-ms-transform'] = scale;
@@ -126,7 +118,6 @@ document.writeln("<script type='text/javascript' src='components/bar.js'></scrip
             var el = this;
             var width = el.clientWidth * 1.5;
 
-            // Get first ripple
             var ripple = null;
             var ripples = el.getElementsByClassName('waves-ripple');
             if (ripples.length > 0) {
@@ -139,7 +130,6 @@ document.writeln("<script type='text/javascript' src='components/bar.js'></scrip
             var relativeY   = ripple.getAttribute('data-y');
             var scale       = ripple.getAttribute('data-scale');
 
-            // Get delay beetween mousedown and mouse leave
             var diff = Date.now() - Number(ripple.getAttribute('data-hold'));
             var delay = 350 - diff;
 
@@ -147,7 +137,6 @@ document.writeln("<script type='text/javascript' src='components/bar.js'></scrip
                 delay = 0;
             }
 
-            // Fade out ripple after delay
             setTimeout(function() {
                 var style = {
                     'top': relativeY+'px',
@@ -178,7 +167,6 @@ document.writeln("<script type='text/javascript' src='components/bar.js'></scrip
             }, delay);
         },
 
-        // Little hack to make <input> can perform waves effect
         wrapInput: function(elements) {
             for (var a = 0; a < elements.length; a++) {
                 var el = elements[a];
@@ -186,12 +174,10 @@ document.writeln("<script type='text/javascript' src='components/bar.js'></scrip
                 if (el.tagName.toLowerCase() === 'input') {
                     var parent = el.parentNode;
 
-                    // If input already have parent just pass through
                     if (parent.tagName.toLowerCase() === 'i' && parent.className.indexOf('ripple') !== -1) {
                         continue;
                     }
 
-                    // Put element class and style to the specified parent
                     var wrapper = document.createElement('i');
                     wrapper.className = el.className + ' waves-input-wrapper';
 
@@ -206,18 +192,12 @@ document.writeln("<script type='text/javascript' src='components/bar.js'></scrip
                     el.className = 'waves-button-input';
                     el.removeAttribute('style');
 
-                    // Put element as child
                     parent.replaceChild(wrapper, el);
                     wrapper.appendChild(el);
                 }
             }
         }
     };
-
-
-    /**
-     * Disable mousedown event for 500ms during and after touch
-     */
     var TouchHandler = {
         /* uses an integer rather than bool so there's no issues with
          * needing to clear timeouts if another touch event occurred
@@ -247,10 +227,6 @@ document.writeln("<script type='text/javascript' src='components/bar.js'></scrip
     };
 
 
-    /**
-     * Delegated click handler for .ripple element.
-     * returns null when .ripple element not in "click tree"
-     */
     function getWavesEffectElement(e) {
         if (TouchHandler.allowEvent(e) === false) {
             return null;
@@ -273,9 +249,6 @@ document.writeln("<script type='text/javascript' src='components/bar.js'></scrip
         return element;
     }
 
-    /**
-     * Bubble the click and show effect if .ripple elem was found
-     */
     function showEffect(e) {
         var element = getWavesEffectElement(e);
 
@@ -309,15 +282,7 @@ document.writeln("<script type='text/javascript' src='components/bar.js'></scrip
         document.body.addEventListener('mousedown', showEffect, false);
     };
 
-    /**
-     * Attach Waves to an input element (or any element which doesn't
-     * bubble mouseup/mousedown events).
-     *   Intended to be used with dynamically loaded forms/inputs, or
-     * where the user doesn't want a delegated click handler.
-     */
     Waves.attach = function(element) {
-        //FUTURE: automatically add waves classes and allow users
-        // to specify them with an options param? Eg. light/classic/button
         if (element.tagName.toLowerCase() === 'input') {
             Effect.wrapInput([element]);
             element = element.parentElement;

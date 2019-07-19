@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Typography</title>
+    <title>About</title>
     <!--down of a brave new world-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" href="logo.png">
@@ -23,40 +23,7 @@
             background-color: transparent;
         }
 
-        ul li {
-            font-size: 20px;
-            background-color: var(--accent-ripple);
-            border-radius: var(--corner-radius);
-            display: inline-block;
-            padding: 5px;
-        }
-
-        ul {
-            padding-left: 0px;
-            display: inline-block;
-        }
-
-        body {
-            overflow-x: hidden;
-        }
-
-        [card] pre {
-            background-color: black;
-            margin: 0px;
-            display: inline-block !important;
-            vertical-align: top;
-            padding-top: 0px;
-            margin-top: 0px;
-
-        }
-
-        [card] {
-
-            width: 100% !important;
-            background-color: black;
-            margin: 0px !important;
-        }
-         @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 768px) {
             [container] {
 
                 margin: 0% 2% !important;
@@ -65,55 +32,33 @@
     </style>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
     <section bar oof class="fixed flat">
         <a data-aos="fade-right" btn icon id="drawer" class="large">menu</a>
-        <p data-aos="fade-right">Typography</p>
+        <p data-aos="fade-right">About</p>
 
         <span data-aos="fade-left" actions>
             <a btn icon class="large">launch</a>
         </span>
     </section>
-    <main data-aos="fade-up" container>
-        <br><br>
-        <H5>These are your regular HTML5 typography elements styled to perfection.</H5><br><br>
-        <H6>Flavours:</H6>
-        <ul data-aos="fade-right">
-            <li>[capitalize]</li>
-            <li>[accent]</li>
-            <li>[strong]</li>
-        </ul><br><br><br>
-        <H1>H1</H1>
-        <H2>H2 Lorem</H2>
-        <H3>H3 Lorem ipsum</H3>
-        <H4>H4 Lorem ipsum</H4>
-        <H5>H5 Lorem ipsum</H5>
-        <H6>H6 Lorem ipsum</H6>
-        <p>P Lorem ipsum</p>
-        <p strong>P strong Lorem ipsum</p>
-        <article>ARTICLE Lorem ipsum</article>
-        <H6 capitalize>Lorem ipsum</H6>
-        <H6 accent>Lorem ipsum</H6>
-        <br><br>
 
-        <pre card data-aos="fade-up" class="rounded depth-5"><code data-language="html">
-<H1>H1 Lorem ipsum</H1>
-<H2>H2 Lorem ipsum</H2>
-<H3>H3 Lorem ipsum</H3>
-<H4>H4 Lorem ipsum</H4>
-<H5>H5 Lorem ipsum</H5>
-<H6>H6 Lorem ipsum</H6>
-<p>P Lorem ipsum</p>
-<p strong>P strong Lorem ipsum</p>
-<article>ARTICLE Lorem ipsum</article>
-<H6 capitalize>Lorem ipsum</H6>
-<H6 accent>Lorem ipsum</H6>
+    <main container>
+        <br>
+        <H4>Why Wavecom?</H4>
         
-        </code></pre>
+        <p>I created Wavecom because most Material Design frameworks before were not flexible enough and they were not human-friendly. With Wavecom I hope to give people an easier way to create websites with a beautiful aesthetic.</p>
+        <br>
+        <H4>Speed</H4>
+        
+        <p>Wavecom is built over a lightweight CSS and Javascript base sprinkled with some Jquery for some magic.</p>
+        
+        <H4>Semantic</H4>
+        <p>All components were built to be semantic in terms of attributes: <span accent>[btn]</span>, <span accent>[bar]</span>, <span accent>[content]</span> and the likes.</p>
+
 
     </main>
-
-    <footer style="margin-top: 100px;" class="accent">
+    
+    <footer style="position: absolute; bottom: 0px; width: 100%;" class="accent">
         <br>
         <div container>
             <H4>Wavecom</H4><br>
@@ -139,10 +84,10 @@
             </ul>
             <ul class="divider">
                 <a href="index.html" btn><i icon>web_asset</i>Welcome</a>
-                <a href="about.html" btn><i icon>account_circle</i>About</a>
+                <a href="about.html" btn class="active"><i icon>account_circle</i>About</a>
                 <a href="contact.html" btn><i icon>mail</i>Contact us</a>
                 <label>Components</label>
-                <a href="typography.html" btn class="active">Typography</a>
+                <a href="typography.html" btn>Typography</a>
                 <a href="buttons.html" btn>Buttons</a>
                 <a href="cards.html" btn>Cards</a>
                 <a href="tabs.html" btn>Tabs</a>
