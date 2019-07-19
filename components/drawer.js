@@ -461,6 +461,6 @@ function DrawerIcon(icon) {
     })();
 }
 
-/////////////////////////////////////////////////////////////////////END DRAWER//////By Mobile Application Design-Development - Codepen////////
+
 
 $( "[drawer] > *" ).wrapAll( "<div class='overflow'></div>" );

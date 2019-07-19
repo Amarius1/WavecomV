@@ -1,4 +1,4 @@
-// drop down menu script
+
 	$( "[dropdown]" ).on( "click", ".activator", function() {
 		$('[dropdown]').removeClass('open');
 		$(this).parent().toggleClass('open');

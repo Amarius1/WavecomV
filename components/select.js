@@ -3,7 +3,6 @@ $(".dropdown > ul").addClass("list");
 $(".dropdown > ul > a").addClass("ripple");
 $(".dropdown .active").addClass("selected");
 
-// Open/close
 $(document).on('click', '.dropdown', function(event) {
   $('.dropdown').not($(this)).removeClass('open');
   $(this).toggleClass('open');
@@ -15,7 +14,7 @@ $(document).on('click', '.dropdown', function(event) {
     $(this).focus();
   }
 });
-// Close when clicking outside
+
 $(document).on('click', function(event) {
   if ($(event.target).closest('.dropdown').length === 0) {
     $('.dropdown').removeClass('open');
@@ -23,7 +22,7 @@ $(document).on('click', function(event) {
   }
   event.stopPropagation();
 });
-// Option click
+
 $(document).on('click', '.dropdown a', function(event) {
   $(this).closest('.list').find('.selected').removeClass('selected');
   $(this).addClass('selected');
@@ -32,10 +31,10 @@ $(document).on('click', '.dropdown a', function(event) {
   $(this).closest('.dropdown').prev('select').val($(this).data('value')).trigger('change');
 });
 
-// Keyboard events
+
 $(document).on('keydown', '.dropdown', function(event) {
   var focused_option = $($(this).find('.list a:focus')[0] || $(this).find('.list a.selected')[0]);
-  // Space or Enter
+
   if (event.keyCode == 32 || event.keyCode == 13) {
     if ($(this).hasClass('open')) {
       focused_option.trigger('click');
@@ -43,7 +42,7 @@ $(document).on('keydown', '.dropdown', function(event) {
       $(this).trigger('click');
     }
     return false;
-    // Down
+ 
   } else if (event.keyCode == 40) {
     if (!$(this).hasClass('open')) {
       $(this).trigger('click');
@@ -51,7 +50,7 @@ $(document).on('keydown', '.dropdown', function(event) {
       focused_option.next().focus();
     }
     return false;
-    // Up
+ 
   } else if (event.keyCode == 38) {
     if (!$(this).hasClass('open')) {
       $(this).trigger('click');
@@ -60,7 +59,7 @@ $(document).on('keydown', '.dropdown', function(event) {
       focused_option.prev().focus();
     }
     return false;
-  // Esc
+
   } else if (event.keyCode == 27) {
     if ($(this).hasClass('open')) {
       $(this).trigger('click');
