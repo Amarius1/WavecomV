@@ -1,0 +1,37 @@
+
+:root {
+    --accent: rgba(14, 0, 255,1);
+    --accent-soft: rgba(14, 0, 255, 0.08);
+    --accent-ripple: rgba(12, 36, 255, 0.2);
+
+    --accent-hover-darken: rgba(0, 110, 255, 1);
+    --card-bkg: white;
+    --accent-link: rgba(50, 0, 255, 1);
+    --corner-radius: 5px;
+    --tab-width: 150px;
+    --switch: rgba(60, 0, 265, 1);
+    --switch-bar: rgba(50, 10, 240, 0.25);
+    --light: white;
+    --mark: rgba(10, 0, 255, 0.2);
+    --fab-accent: rgba(2,2,2,1);
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('Product Sans Regular.ttf') format('truetype');
+}
+.product-font
+{
+    font-family: 'Product Sans', Fallback, sans-serif;
+}
+#trapezoid2 {
+ height: 0;
+ width: 25%;
+ border-bottom: 70vh solid rgba(1,70,255,1);
+ border-left: 0px solid transparent;
+ border-right: 120vh solid transparent;
+ padding: 0 8px 0 0;
+ z-index: -2 !important;
+ border-image: linear-gradient(to right top, #0146ff, #b700bd, #da0077, #d6003f, #bc4714);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    
+}
