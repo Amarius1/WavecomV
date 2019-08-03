@@ -1,0 +1,220 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube</title>
+    <!--down of a brave new world-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="icon.png">
+    <link href="highlight.css" type="text/css" rel="stylesheet">
+    <link href="wavecom.css" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+    <style>
+        @media only screen and (max-width: 768px) {
+            [container] {
+
+                margin: 0% 2% !important;
+            }
+        }
+        [tabs].bottom
+        {
+            position: sticky;
+            bottom: 0.3px;
+            left: 0px;
+            border-top-style: solid;
+            border-top-color: rgba(1,1,1,0.2);
+            border-top-width: 1px;
+            
+        }
+        ::-webkit-scrollbar
+        {
+            width: 3px;
+        }
+        [tabs].bottom [btn]
+        {
+            text-transform: capitalize !important;
+            font-size: 13px !important;
+            padding-left: 2.2px !important;
+            padding-right: 2.2px !important;
+            padding-top: 2px !important;
+            padding-bottom: 2px !important;
+            font-weight: 450 !important;
+            letter-spacing: 0px !important;
+        }
+        [tabs].bottom [btn] [icon]
+        {
+            font-size: 25px !important;
+            margin-bottom: 0px !important;
+        }
+        [tabs].bottom [btn].active
+        {
+            color: red !important;
+        }
+        [tabs].bottom [btn].active [icon]
+        {
+            color: red !important;
+        }
+        [tabs].bottom [btn].active .waves-ripple
+        {
+            background-color: rgba(255,0,0,0.1) !important;
+        }
+        #ytnav
+        {
+            border-bottom-style: solid;
+            border-bottom-color: rgba(1,1,1,0.2);
+            border-bottom-width: 0.5px;
+            padding: 5px 3px !important; 
+            filter: drop-shadow(0px -1px 5px rgba(1,1,1,0.09));
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            transition: all 0.3s;
+            top: 0px !important;
+        }
+        [content]
+        {
+            height: 100%;
+        }
+        [story] 
+        {
+            display: inline-block;
+        }
+        [story] *
+        {
+            display: block;
+        }
+        [story] [card]
+        {
+            height: 200px;
+            width: 120px;
+            padding: 0px; 
+            margin: 0px;
+            overflow-y: hidden;
+        }
+        [story] img 
+        {
+            min-height: 100% !important;
+            min-width: 200px !important;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            max-height: none !important;
+            max-width: 270px !important;
+            margin: 0px !important;
+            transform: translate(-50%, 0%);
+        }
+        
+        .scroller
+        {
+            margin-left: 9px;
+            margin-right: 9px;
+            overflow-x: scroll !important;
+            height: 240px;
+            width: 800px;
+        }
+        [story] p
+        {
+            text-align: center;
+            margin-top: 2px !important;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('youtube.svg'); background-repeat: no-repeat; background-size: cover;">
+    <main>
+
+
+
+        <span style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); height: 94%; width: 24%; padding: 0px !important; margin: 0px !important;" card class="depth-2">
+            <section bar id="ytnav" class="flat fixed">
+                <img src="youtube.png" height="64px" style="margin-bottom: -20px; margin-top: -13px;">
+                <span actions style="padding-right: 3px;">
+                    <a btn icon>search</a>
+                    <a btn icon>videocam</a>
+                    <a style="margin-top: -7px;"><img src="profile.png" width="26px" style="border-radius: 50px;"></a>
+                </span>
+            </section>
+            <section content>
+                <span id="tab1" class="active">
+                    <p style="padding: 9px 8px">Stories</p>
+                    
+                    <div class="scroller">
+                        <span story>
+                            <span card class="depth-0">
+                                <img src="https://avatarfiles.alphacoders.com/531/53130.jpg">
+                            </span>
+                            <p>Alienware</p>
+                        </span>
+                        
+                        <span story>
+                            <span card class="depth-0">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSiapcQlb6rYl1irS0qhzwm-33Difn_SmmBY6uRcElNGTPQIqPOQ">
+                            </span>
+                            <p>IGN</p>
+                        </span>
+                        
+                         <span story>
+                            <span card class="depth-0">
+                                <img src="https://spinninrecords.com/media/cache/release_thumbnail/uploads/media/releases/0001/10/thumb_0aad17b947d9c627_releases_listed.jpeg">
+                            </span>
+                            <p>Spinnin' Records</p>
+                        </span>
+                    </div>
+                    <span card class="depth-0">
+                        <img src="https://i.ytimg.com/vi/ozUt5Two0X0/maxresdefault.jpg">
+                        <p style="margin-top: -1px">Techgeek</p>
+                        <article style="float: right; position: relative; top: -20px">15k views</article>
+                    
+                    
+                    </span>
+                    
+                    
+                </span>
+                <span id="tab2">
+                    <p>Trending</p>
+                </span>
+                <span id="tab3">
+                    <p>Subscriptions</p>
+                </span>
+                 <span id="tab4">
+                    <p>Inbox</p>
+                </span>
+                 <span id="tab5">
+                    <p>Library</p>
+                </span>
+            </section>
+            <header tabs class="bottom stacked">
+                <a btn class="active" href="#tab1"><i icon>home</i>home</a>
+                <a btn href="#tab2"><i icon>whatshot</i>trending</a>
+                <a btn href="#tab3"><i icon>subscriptions</i>subscriptions</a>
+                <a btn href="#tab4"><i icon>mail</i>inbox</a>
+                <a btn href="#tab5"><i icon>folder</i>library</a>
+            </header>
+
+
+        </span>
+
+
+
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="wavecom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="rainbow-custom.min.js"></script>
+
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
