@@ -26,6 +26,7 @@
 :root {
     --accent: rgba(14, 0, 255,1);
     --accent-soft: rgba(14, 0, 255, 0.08);
+    --accent-soft2: rgba(64, 0, 255,0.7);
     --accent-ripple: rgba(12, 36, 255, 0.2);
 
     --accent-hover-darken: rgba(0, 110, 255, 1);
