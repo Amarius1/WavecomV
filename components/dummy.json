@@ -1,19 +1,17 @@
-{
-  "items": [
-    {
-      "key": "First",
-      "value": 1
-    },{
-      "key": "Second",
-      "value": 2
-    },{
-      "key": "Third",
-      "value": "3"
-    }
-  ],
-  "obj": {
-    "number": 1.2345e-6,
-    "enabled": true
-  },
-  "message": "Strings have to be in double-quotes."
-}
+   "Caption": "Module caption",
+    "IconsDirectory": "C://Images/",
+    "Buttons": [
+        {
+            "TText": "google",
+            "JavaScriptAction": "alert('google')"
+        },
+        {
+            "TText": "microsoft",
+            "JavaScriptAction": "alert('microsoft')"
+        },
+        {
+            "TText": "yahoo",
+            "JavaScriptAction": "alert('yahoo')"
+        }
+    ]
+} 
