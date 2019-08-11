@@ -1,17 +1,5 @@
-   "Caption": "Module caption",
-    "IconsDirectory": "C://Images/",
-    "Buttons": [
-        {
-            "TText": "google",
-            "JavaScriptAction": "alert('google')"
-        },
-        {
-            "TText": "microsoft",
-            "JavaScriptAction": "alert('microsoft')"
-        },
-        {
-            "TText": "yahoo",
-            "JavaScriptAction": "alert('yahoo')"
-        }
-    ]
-} 
+Channel1
+aasfagdg
+
+Channel2
+afaofjaolj
